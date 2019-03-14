@@ -1,0 +1,24 @@
+.header {
+  background: url(../assets/heroImg.png) no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  text-align: right;
+  @include vertical-flex-center;
+
+  &__title, &__tagline {
+    transform: translateX(-50%);
+  }
+
+  &__tagline {
+    margin-top: $medium-gap;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+  }
+}
+
