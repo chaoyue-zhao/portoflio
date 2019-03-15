@@ -1,9 +1,12 @@
 .about {
-  padding: 0 10% 0 10%;
+  @include section-style;
 
   &__title {
     text-align: center;
-    transform: translateY(35%);
+    position: relative;
+    top: 1rem;
+    line-height: 6rem;
+    margin-left: 5rem;
     z-index: -10;
   }
 
@@ -11,7 +14,7 @@
     border: 2px solid $primary-color;
     display: flex;
     justify-content: flex-end;
-    padding: 2% 5% 2% 2%;
+    padding: 2%;
     position: relative;
     background: $white;
   }
@@ -20,9 +23,9 @@
     width: 35%;
     height: 400px;
     order: -1;
-    position: absolute;
-    top: -10%;
-    left: -10%;
+    position: relative;
+    top: -50px;
+    left: -50px;
     box-shadow: 10px 20px 50px 6px rgba(23, 23 ,23, 0.2);
   }
 
@@ -34,5 +37,27 @@
 
   &__text-container {
     width: 65%;
+  }
+}
+
+.portfolio {
+  background: url(../assets/bg-img.png) no-repeat;
+  background-size: cover;
+  @include section-style;
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 2rem;
+    grid-auto-rows: 70vh;
+  }
+
+  &__title {
+    transform: translateX(-13%);
+  }
+
+  &__item-container {
+    transform: translateY(-20%);
+    text-align: center;
   }
 }

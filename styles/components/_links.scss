@@ -6,13 +6,23 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $primary-color;
   display: block;
   width: 100px;
   
-  &__section--top {
-    transform: rotate(-90deg) translateX(-60px) translateY(-50px);
-     
+  &__section {
+    color: $primary-color;
+    position: absolute;
+
+    &--accent {
+      color: $white;
+    }
+  }
+  
+  &__section-top {
+    transform: rotate(-90deg);
+    top: 70px;
+    left: 5%;
+
     &::after{
       @include pseudo;
       width: 50px;
@@ -21,19 +31,35 @@
       right: -45px;
       top: 15px;
     }
+
+    &--accent {
+      &::after {
+        background: $white;
+        right: -38px;
+      }
+    } 
   }
 
-  &__section--bottom {
-    transform: rotate(-90deg) translateY(50px);
-    margin-left: 90%;
-     
-    &::before {
+  &__section-bottom {
+    transform: rotate(-90deg);
+    bottom: 82px;
+    right: 5%;
+
+    &::after {
       @include pseudo;
-      width: 30px;
+      width: 50px;
       height: 2px;
       background: $primary-color;
-      left: -45px;
+      left: -52px;
       top: 15px;
     }
+
+    &--accent {    
+      &::after {
+        background: $white;
+        left: -55px;
+      }
+    }
+     
   }
 }

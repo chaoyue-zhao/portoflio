@@ -12,8 +12,8 @@ body {
   font-family: $heading-font;
 
   &-primary {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 7rem;
+    line-height: 7rem;
   }
 
   &-secondary {
@@ -29,8 +29,13 @@ body {
   }
 
   &-title {
-    font-size: 5rem;
+    font-size: 8rem;
+    letter-spacing: 5px;
     color: $primary-color;
+
+    &--accent {
+      color: $white;
+    }
   }
 }
 
@@ -47,10 +52,20 @@ body {
     font-style: italic;
     color:$primary-color;
     margin-bottom: $small-gap;
+
+    &--accent {
+      color: $white;
+      font-style: initial;
+    }
   }
 }
 
 .dev-icon {
   color: $white;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.dev-svg {
+  fill: $white;
+  width: 1.5rem;
 }

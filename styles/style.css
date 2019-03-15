@@ -259,7 +259,7 @@ body {
 
 .wrapper {
   max-width: 1400px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -296,8 +296,8 @@ body {
 }
 
 .heading-primary {
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 7rem;
+  line-height: 7rem;
 }
 
 .heading-secondary {
@@ -313,8 +313,13 @@ body {
 }
 
 .heading-title {
-  font-size: 5rem;
+  font-size: 8rem;
+  letter-spacing: 5px;
   color: #16524C;
+}
+
+.heading-title--accent {
+  color: #f8f8f8;
 }
 
 .paragraph {
@@ -333,9 +338,19 @@ body {
   margin-bottom: 1rem;
 }
 
+.paragraph-title--accent {
+  color: #f8f8f8;
+  font-style: initial;
+}
+
 .dev-icon {
   color: #f8f8f8;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.dev-svg {
+  fill: #f8f8f8;
+  width: 1.5rem;
 }
 
 .links {
@@ -346,17 +361,27 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #16524C;
   display: block;
   width: 100px;
 }
 
-.links__section--top {
-  -webkit-transform: rotate(-90deg) translateX(-60px) translateY(-50px);
-          transform: rotate(-90deg) translateX(-60px) translateY(-50px);
+.links__section {
+  color: #16524C;
+  position: absolute;
 }
 
-.links__section--top::after {
+.links__section--accent {
+  color: #f8f8f8;
+}
+
+.links__section-top {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 70px;
+  left: 5%;
+}
+
+.links__section-top::after {
   content: "";
   display: block;
   position: absolute;
@@ -367,21 +392,51 @@ body {
   top: 15px;
 }
 
-.links__section--bottom {
-  -webkit-transform: rotate(-90deg) translateY(50px);
-          transform: rotate(-90deg) translateY(50px);
-  margin-left: 90%;
+.links__section-top--accent::after {
+  background: #f8f8f8;
+  right: -38px;
 }
 
-.links__section--bottom::before {
+.links__section-bottom {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  bottom: 82px;
+  right: 5%;
+}
+
+.links__section-bottom::after {
   content: "";
   display: block;
   position: absolute;
-  width: 30px;
+  width: 50px;
   height: 2px;
   background: #16524C;
-  left: -45px;
+  left: -52px;
   top: 15px;
+}
+
+.links__section-bottom--accent::after {
+  background: #f8f8f8;
+  left: -55px;
+}
+
+.portfolio__image-container {
+  height: 280px;
+  width: 100%;
+  background: #D8D8D8;
+}
+
+.portfolio__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio__text-container {
+  background: #1C8682;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .header {
@@ -428,13 +483,17 @@ body {
 }
 
 .about {
-  padding: 0 10% 0 10%;
+  padding: 5% 10% 8% 10%;
+  position: relative;
+  margin: 0 auto;
 }
 
 .about__title {
   text-align: center;
-  -webkit-transform: translateY(35%);
-          transform: translateY(35%);
+  position: relative;
+  top: 1rem;
+  line-height: 6rem;
+  margin-left: 5rem;
   z-index: -10;
 }
 
@@ -446,7 +505,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 2% 5% 2% 2%;
+  padding: 2%;
   position: relative;
   background: #f8f8f8;
 }
@@ -457,9 +516,9 @@ body {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-  position: absolute;
-  top: -10%;
-  left: -10%;
+  position: relative;
+  top: -50px;
+  left: -50px;
   -webkit-box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
           box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
 }
@@ -473,5 +532,33 @@ body {
 
 .about__text-container {
   width: 65%;
+}
+
+.portfolio {
+  background: url(../assets/bg-img.png) no-repeat;
+  background-size: cover;
+  padding: 5% 10% 8% 10%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.portfolio .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 2rem;
+  grid-auto-rows: 70vh;
+}
+
+.portfolio__title {
+  -webkit-transform: translateX(-13%);
+          transform: translateX(-13%);
+}
+
+.portfolio__item-container {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
