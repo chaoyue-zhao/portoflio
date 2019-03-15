@@ -2,18 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Vidaloka" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,500i|Vidaloka" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Chaoyue Zhao // Front-End Web Developer // Toronto </title>
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__title heading heading-primary">
-      Morning<span class="greeting">I'm Chao</span></h1>
-    <h2 class="header__tagline heading heading-secondary">Front-End Web Developer & <span>Unique Shoe Collector</span></span></h2>
+  <header class="header" id="header">
+    <div class="wrapper">
+      <h1 class="header__title heading heading-primary">
+        <span class="greeting"></span><span class="width">I'm Chao</span></h1>
+      <h2 class="header__tagline heading heading-tertiary">
+        Front-End Web Developer
+        <span class="width"><span class="accent">&</span>Unique Shoe Collector</span></h2>
+    </div>
   </header>
+ <main id="main">
+    <section class="about" id="about">
+      <a href="#header" class="links links__section links__section--top">Header</a>
+      <div class="wrapper">
+        <h2 class="about__title heading heading-title">About Me</h2>
+        <div class="about__content">
+          <div class="about__text-container">
+            <h3 class="heading heading-secondary">I'm Chao</h3>
+            <p class="paragraph paragraph-title">I believe computers are created to create.</p>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolor optio iste numquam inventore ipsam earum itaque laboriosam, eum sequi, sapiente repellendus dolorum sunt non! Deleniti, consectetur maiores animi ipsum officia reiciendis incidunt in laboriosam neque quas excepturi repellendus, voluptates veniam voluptatem. Debitis error labore minus quae assumenda, perferendis quis.
+            </p>
+          </div>
+          <div class="about__image-container image">
+            <img src="assets/chao.jpg" alt="headshot of Chao sitting in a grey armchair wearing a jean top" class="about__image">
+          </div>
+        </div>
+      </div>
+      <a href="#portfolio" class="links links__section links__section--bottom">Portfolio</a>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="wrapper">
+        <div class="portfolio__item-container">
+          <div class="portfolio__image-container">
+            <img src="assets/mondrian.png" alt="screenshot of the Mondrian front page" class="portfolio__image image">
+          </div>
+          <div class="portfolio__text-container">
+            <h3 class="heading heading-secondary">Mondrian in Style</h3>
+            <div class="portfolio__icon-container">
+              <i class="dev-icon devicon-html5-plain-wordmark"></i>
+              <i class="dev-icon devicon-sass-original"></i>
+              <i class="dev-icon devicon-css3-plain-wordmark"></i>
+              <i class="dev-icon devicon-javascript-plain"></i>
+              <i class="dev-icon devicon-jquery-plain-wordmark"></i>
+              <i class="dev-icon devicon-github-plain"></i>
+              <i class="dev-icon devicon-visualstudio-plain"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ </main>
   <script src="script/script.js">
   </script>
 </body>

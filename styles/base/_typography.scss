@@ -1,3 +1,10 @@
+body {
+  font-size: 1rem;
+  font-family: $body-font;
+  line-height: 1.6;
+  background: $white;
+}
+
 .heading {
   margin: 0;
   padding: 0;
@@ -10,8 +17,40 @@
   }
 
   &-secondary {
+    font-size: 2.5rem;
+    color: $primary-color;
+  }
+
+  &-tertiary{
     font-family: $body-font;
     font-size: 1.5rem;
+    font-weight: normal;
     line-height: 1.2;
   }
+
+  &-title {
+    font-size: 5rem;
+    color: $primary-color;
+  }
+}
+
+.paragraph {
+  font-family: $body-font;
+  color: $primary-color;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+
+  &-title {
+    font-family: $heading-font;
+    font-weight: normal;
+    font-style: italic;
+    color:$primary-color;
+    margin-bottom: $small-gap;
+  }
+}
+
+.dev-icon {
+  color: $white;
+  font-size: 2rem;
 }

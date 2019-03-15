@@ -254,16 +254,17 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: "Fira Sans", sans-serif;
-  line-height: 1.6;
-  color: #232323;
-  background: #fafafa;
+  body: #D8D8D8;
 }
 
 .wrapper {
   max-width: 1400px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.image {
+  display: block;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
@@ -280,10 +281,17 @@ body {
   overflow: hidden;
 }
 
+body {
+  font-size: 1rem;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.6;
+  background: #f8f8f8;
+}
+
 .heading {
   margin: 0;
   padding: 0;
-  color: #fafafa;
+  color: #f8f8f8;
   font-family: "Vidaloka", serif;
 }
 
@@ -293,17 +301,98 @@ body {
 }
 
 .heading-secondary {
+  font-size: 2.5rem;
+  color: #16524C;
+}
+
+.heading-tertiary {
   font-family: "Fira Sans", sans-serif;
   font-size: 1.5rem;
+  font-weight: normal;
   line-height: 1.2;
 }
 
+.heading-title {
+  font-size: 5rem;
+  color: #16524C;
+}
+
+.paragraph {
+  font-family: "Fira Sans", sans-serif;
+  color: #16524C;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph-title {
+  font-family: "Vidaloka", serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #16524C;
+  margin-bottom: 1rem;
+}
+
+.dev-icon {
+  color: #f8f8f8;
+  font-size: 2rem;
+}
+
+.links {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16524C;
+  display: block;
+  width: 100px;
+}
+
+.links__section--top {
+  -webkit-transform: rotate(-90deg) translateX(-60px) translateY(-50px);
+          transform: rotate(-90deg) translateX(-60px) translateY(-50px);
+}
+
+.links__section--top::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #16524C;
+  right: -45px;
+  top: 15px;
+}
+
+.links__section--bottom {
+  -webkit-transform: rotate(-90deg) translateY(50px);
+          transform: rotate(-90deg) translateY(50px);
+  margin-left: 90%;
+}
+
+.links__section--bottom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #16524C;
+  left: -45px;
+  top: 15px;
+}
+
 .header {
-  background: url(../assets/heroImg.png) no-repeat;
-  background-position: 0 0;
+  background: url(../assets/hero-img.png) no-repeat;
+  background-position: center bottom;
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,26 +403,75 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header__title {
-  width: 100%;
+.header__title, .header__tagline {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
 .header__tagline {
-  width: 100%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
-.header span {
+.header .width {
   display: block;
   width: 100%;
+}
+
+.header .accent {
+  color: #f8f8f8;
+  margin-right: 10px;
+}
+
+.about {
+  padding: 0 10% 0 10%;
+}
+
+.about__title {
+  text-align: center;
+  -webkit-transform: translateY(35%);
+          transform: translateY(35%);
+  z-index: -10;
+}
+
+.about__content {
+  border: 2px solid #16524C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2% 5% 2% 2%;
+  position: relative;
+  background: #f8f8f8;
+}
+
+.about__image-container {
+  width: 35%;
+  height: 400px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  -webkit-box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
+          box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__text-container {
+  width: 65%;
 }
 /*# sourceMappingURL=style.css.map */

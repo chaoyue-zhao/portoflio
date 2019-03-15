@@ -1,5 +1,5 @@
 .header {
-  background: url(../assets/heroImg.png) no-repeat;
+  background: url(../assets/hero-img.png) no-repeat;
   background-position: center bottom;
   background-size: cover;
   height: 100vh;
@@ -16,9 +16,14 @@
     margin-top: $medium-gap;
   }
 
-  span {
+  .width {
     display: block;
     width: 100%;
+  }
+
+  .accent {
+    color: $white;
+    margin-right: $tiny-gap;
   }
 }
 

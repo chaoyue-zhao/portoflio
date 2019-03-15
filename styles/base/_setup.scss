@@ -254,16 +254,17 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: $body-font;
-  line-height: 1.6;
-  color: $black;
-  background: $white;
+  body: $grey;
 }
 
 .wrapper {
   max-width: 1400px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.image {
+  display: block;
 }
 
 .visuallyhidden:not(:focus):not(:active) {

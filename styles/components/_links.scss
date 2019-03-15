@@ -1,0 +1,39 @@
+.links {
+  font-family: $body-font;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $primary-color;
+  display: block;
+  width: 100px;
+  
+  &__section--top {
+    transform: rotate(-90deg) translateX(-60px) translateY(-50px);
+     
+    &::after{
+      @include pseudo;
+      width: 50px;
+      height: 2px;
+      background: $primary-color;
+      right: -45px;
+      top: 15px;
+    }
+  }
+
+  &__section--bottom {
+    transform: rotate(-90deg) translateY(50px);
+    margin-left: 90%;
+     
+    &::before {
+      @include pseudo;
+      width: 30px;
+      height: 2px;
+      background: $primary-color;
+      left: -45px;
+      top: 15px;
+    }
+  }
+}

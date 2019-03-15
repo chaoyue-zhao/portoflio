@@ -1,0 +1,38 @@
+.about {
+  padding: 0 10% 0 10%;
+
+  &__title {
+    text-align: center;
+    transform: translateY(35%);
+    z-index: -10;
+  }
+
+  &__content {
+    border: 2px solid $primary-color;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2% 5% 2% 2%;
+    position: relative;
+    background: $white;
+  }
+
+  &__image-container {
+    width: 35%;
+    height: 400px;
+    order: -1;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    box-shadow: 10px 20px 50px 6px rgba(23, 23 ,23, 0.2);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text-container {
+    width: 65%;
+  }
+}
