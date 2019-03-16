@@ -470,7 +470,7 @@ body {
 
 .form__input:focus {
   outline: none;
-  border: 2px solid #99E3DC;
+  border: 2px solid #1C8682;
   -webkit-box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
           box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
 }
@@ -653,6 +653,48 @@ body {
 
 .portfolio__button:first-child {
   margin-right: 1rem;
+}
+
+.footer {
+  background: #D8D8D8;
+}
+
+.footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0 1rem 0;
+}
+
+.footer__icon {
+  color: #16524c;
+  font-size: 2rem;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.footer__icon:hover {
+  color: #1C8682;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.footer__toronto {
+  margin-top: 10px;
+  width: 1rem;
+}
+
+.footer__paragraph {
+  text-align: center;
+}
+
+.footer__paragraph:last-child {
+  padding-bottom: 1rem;
 }
 
 .header {
