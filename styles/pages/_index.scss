@@ -121,3 +121,19 @@
     margin-bottom: $small-gap;
   }
 }
+
+.contact {
+  background: url(../assets/contact-img.png) no-repeat;
+  background-position: cover;
+  background-size: 50%;
+
+  &__title {
+    position: relative;
+    left: 15%;
+  }
+
+  &__form {
+    width: 50%;
+    margin-left: 45vw;
+  }
+}

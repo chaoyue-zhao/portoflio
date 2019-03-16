@@ -15,6 +15,7 @@
   position: relative;
   z-index: 10;
   transition: color 0.3s;
+  cursor: pointer;
   @include box-shadow;
 
   &:hover, &:focus {
@@ -36,7 +37,6 @@
   }
 
   &::before {
-    background: $secondary-color;
     @include pseudo; 
     @include position (absolute, -4px, -4px, -4px, -4px);
     opacity: 0.5;  
