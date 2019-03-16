@@ -47,13 +47,13 @@
 }
 
 @mixin section-style() {
-  padding: 5% 10% 8% 10%;
+  padding: 5% 10% 5% 10%;
   position: relative;
   margin: 0 auto;
 }
 
-@mixin box-shadow($x, $y) {
-  box-shadow: $x $y $primary-color;
+@mixin box-shadow {
+  box-shadow: 10px 20px 50px 6px rgba(23, 23 ,23, 0.2);
 }
 
 @mixin hover($color) {

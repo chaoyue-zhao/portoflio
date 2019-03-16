@@ -1,5 +1,6 @@
 .about {
   @include section-style;
+  padding-bottom: 10%;
 
   &__title {
     text-align: center;
@@ -26,7 +27,7 @@
     position: relative;
     top: -50px;
     left: -50px;
-    box-shadow: 10px 20px 50px 6px rgba(23, 23 ,23, 0.2);
+    @include box-shadow;
   }
 
   &__image {
@@ -44,20 +45,4 @@
   background: url(../assets/bg-img.png) no-repeat;
   background-size: cover;
   @include section-style;
-  
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-column-gap: 2rem;
-    grid-auto-rows: 70vh;
-  }
-
-  &__title {
-    transform: translateX(-13%);
-  }
-
-  &__item-container {
-    transform: translateY(-20%);
-    text-align: center;
-  }
 }

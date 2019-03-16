@@ -1,0 +1,62 @@
+// button styling adopted from https://tympanus.net/Development/ButtonStylesInspiration/
+.button {
+  color: $white;
+  background: none;
+  font-family: $body-font;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none; 
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  padding: $tiny-gap $medium-gap;
+  position: relative;
+  z-index: 10;
+  transition: color 0.3s;
+  @include box-shadow;
+
+  &:hover, &:focus {
+    background: $primary-color;
+    color: $white;
+
+    &::before {
+      opacity: 1;
+    }
+
+    &::after {
+      background: $primary-color;
+    }
+
+    &::before,
+    &::after {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  &::before {
+    background: $secondary-color;
+    @include pseudo; 
+    @include position (absolute, -4px, -4px, -4px, -4px);
+    opacity: 0.2;  
+    transform: scale3d(0.7, 1, 1);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  &::after {
+    @include pseudo; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale3d(1.1, 1, 1);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  &::before,
+  &::after {
+    background: $secondary-color;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    z-index: -10; 
+  }
+}
