@@ -1,18 +1,19 @@
 .links {
+  color: $white;
   font-family: $body-font;
   font-size: 1.2rem;
   font-weight: normal;
-  font-style: italic;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  width: 100px;
   
   &__section {
+    font-style: italic;
     color: $primary-color;
+    width: 100px;
     position: absolute;
-
+    
     &--accent {
       color: $white;
     }
@@ -60,6 +61,13 @@
         left: -55px;
       }
     }
-     
+  }
+
+  &__section-portfolio {
+    top: 110px;
+
+    &::after {
+      right: -82px;
+    }
   }
 }
