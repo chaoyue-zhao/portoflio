@@ -302,7 +302,7 @@ body {
 
 .heading-secondary {
   font-size: 2.5rem;
-  color: #16524C;
+  color: #16524c;
 }
 
 .heading-secondary--accent {
@@ -320,7 +320,7 @@ body {
 .heading-title {
   font-size: 8rem;
   letter-spacing: 5px;
-  color: #16524C;
+  color: #16524c;
 }
 
 .heading-title--accent {
@@ -329,7 +329,7 @@ body {
 
 .paragraph {
   font-family: "Fira Sans", sans-serif;
-  color: #16524C;
+  color: #16524c;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -343,7 +343,7 @@ body {
   font-family: "Vidaloka", serif;
   font-weight: normal;
   font-style: italic;
-  color: #16524C;
+  color: #16524c;
   margin-bottom: 1rem;
 }
 
@@ -376,7 +376,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  border: 2px solid #16524C;
+  border: 2px solid #16524c;
   border-radius: 5px;
   padding: 10px 2rem;
   position: relative;
@@ -388,7 +388,7 @@ body {
 }
 
 .button:hover, .button:focus {
-  background: #16524C;
+  background: #16524c;
   color: #f8f8f8;
 }
 
@@ -397,7 +397,7 @@ body {
 }
 
 .button:hover::after, .button:focus::after {
-  background: #16524C;
+  background: #16524c;
 }
 
 .button:hover::before, .button:hover::after, .button:focus::before, .button:focus::after {
@@ -415,7 +415,7 @@ body {
   right: -4px;
   bottom: -4px;
   left: -4px;
-  opacity: 0.2;
+  opacity: 0.5;
   -webkit-transform: scale3d(0.7, 1, 1);
           transform: scale3d(0.7, 1, 1);
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -460,7 +460,7 @@ body {
 }
 
 .links__section {
-  color: #16524C;
+  color: #16524c;
   position: absolute;
 }
 
@@ -481,7 +481,7 @@ body {
   position: absolute;
   width: 50px;
   height: 2px;
-  background: #16524C;
+  background: #16524c;
   right: -45px;
   top: 15px;
 }
@@ -504,7 +504,7 @@ body {
   position: absolute;
   width: 50px;
   height: 2px;
-  background: #16524C;
+  background: #16524c;
   left: -52px;
   top: 15px;
 }
@@ -532,24 +532,30 @@ body {
 }
 
 .portfolio__image-container {
-  height: 100%;
+  height: 70%;
   width: 60%;
-  mix-blend-mode: color;
+  margin: 8% 0;
+  background: linear-gradient(65deg, rgba(22, 82, 76, 0.8), transparent 50%);
 }
 
 .portfolio__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: overlay;
 }
 
 .portfolio__text-container {
-  background: #16524C;
+  background: #16524c;
   width: 35%;
   padding: 2rem;
   -webkit-box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
           box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  position: relative;
 }
 
 .portfolio__icon:nth-child(4n) {
@@ -624,7 +630,7 @@ body {
 }
 
 .about__content {
-  border: 2px solid #16524C;
+  border: 2px solid #16524c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

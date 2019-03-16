@@ -12,15 +12,17 @@
   }
 
   &__image-container {
-    height: 100%;
+    height: 70%;
     width: 60%;
-    mix-blend-mode: color;
+    margin: 8% 0;
+    background: linear-gradient(65deg, rgba(22, 82, 76, 0.8), transparent 50%);
   }
-
+  
   &__image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    mix-blend-mode: overlay;
   }
 
   &__text-container {
@@ -28,6 +30,8 @@
     width: 35%;
     padding: $medium-gap; 
     @include box-shadow;
+    order: -1;
+    position: relative;
   }
 
   &__icon:nth-child(4n) {
@@ -38,6 +42,19 @@
   &__icon-container,
   &__description {
     margin-bottom: $medium-gap;
+  }
+
+  &__project-title {
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   left: 90%;
+    //   top: 60%;
+    //   width: 10rem;
+    //   height: 5px;
+    //   background: $white;
+    // }
   }
 
   &__button {
