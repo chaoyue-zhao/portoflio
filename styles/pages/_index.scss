@@ -1,14 +1,12 @@
 .about {
   @include section-style;
-  padding-bottom: 10%;
+  position: relative;
 
   &__title {
     text-align: center;
-    position: relative;
-    top: 1rem;
-    line-height: 6rem;
-    margin-left: 5rem;
-    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 50%;
   }
 
   &__content {
@@ -45,6 +43,7 @@
   background: url(../assets/bg-img.png) no-repeat;
   background-size: cover;
   @include section-style;
+  padding-top: 5%;
   display: grid; 
   grid-template-columns: 20px 1fr 20px;
   align-content: start;
@@ -69,6 +68,7 @@
 
 .blog {
   @include section-style;
+  padding-top: 10%;
   background: $grey;
   overflow: hidden;
   
@@ -80,13 +80,13 @@
 
   &__item {
     @include box-shadow;
-    transform: translateY(-20%);
   }
 
   &__title {
-    text-align: right;
-    position: relative;
-    right: -15%;
+    position: absolute;
+    right: 0;
+    top: 2%;
+
   }
 
   &__image-container {
