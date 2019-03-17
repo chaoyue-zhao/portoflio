@@ -603,6 +603,20 @@ body {
   right: -82px;
 }
 
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__item {
+  margin-bottom: 10px;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
 .portfolio__title {
   -webkit-transform: translateX(-13%);
           transform: translateX(-13%);
@@ -910,8 +924,7 @@ body {
 }
 
 .contact__title {
-  position: relative;
-  left: 15%;
+  margin-left: 14rem;
 }
 
 .contact__form {

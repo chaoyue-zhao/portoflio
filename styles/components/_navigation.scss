@@ -1,0 +1,14 @@
+.header {
+  
+  &__list {
+    @include list;
+  }
+
+  &__item {
+    margin-bottom: $tiny-gap;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
