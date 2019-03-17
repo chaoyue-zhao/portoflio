@@ -8,7 +8,7 @@
   opacity: 0;
   transition: all 0.7s ease-out;
   transform: translate3d(0, 100px, 0);
-   
+
   .is-active & {
     visibility: visible;
     opacity: 1;
@@ -18,7 +18,7 @@
   &.slideInUp2 {
     transition-delay: 0.2s;
   }
-  
+
   &.slideInUp3 {
     transition-delay: 0.4s;
   }
@@ -30,4 +30,20 @@
   &.slideInUp5 {
     transition-delay: 0.8s;
   }
+}
+
+.scroll-hint {
+  font-size: 3rem;
+  color: $white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.content-block {
+  background: $primary-color;
+  height: 50vh;
+  padding: 10vh 0;
 }

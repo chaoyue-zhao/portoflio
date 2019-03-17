@@ -1,14 +1,20 @@
 .header {
-  background: url(../assets/hero-img.png) no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  flex-wrap: wrap;
-  text-align: right;
-  @include vertical-flex-center;
+  
+  .bcg {
+    background: url(../assets/hero-img.png) no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    flex-wrap: wrap;
+    text-align: right;
+    @include vertical-flex-center;
+  }
 
-  &__title, &__tagline {
+  &__title, 
+  &__tagline {
     transform: translateX(-50%);
   }
 

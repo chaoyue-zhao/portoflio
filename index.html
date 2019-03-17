@@ -12,178 +12,205 @@
   <title>Chaoyue Zhao // Front-End Web Developer // Toronto </title>
 </head>
 <body>
-  <header class="header fs" id="header">
-    <div class="wrapper">
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#slide-1" class="header__link links">About</a>
-          </li>
-          <li class="header__item">
-            <a href="#slide-2" class="header__link links">Portfolio</a>
-          </li>
-          <li class="header__item">
-            <a href="#slide-3" class="header__link links">Blog</a>
-          </li>
-          <li class="header__item">
-            <a href="#slide-4" class="header__link links">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="header__title heading heading-primary">
-        <span class="greeting"></span><span class="width">I'm Chao</span></h1>
-      <h2 class="header__tagline heading heading-tertiary">
-        Front-End Web Developer
-        <span class="width"><span class="accent">&</span>Unique Shoe Collector</span></h2>
+  <header class="header fs" id="intro">
+    <div class="bcg">
+      <div class="wrapper">
+        <nav class="nav__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#slide-1" class="nav__link links">
+                <span class="nav__dot"></span>
+                <span class="nav__label">About</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#slide-2" class="nav__link links">
+                <span class="nav__dot"></span>
+                <span class="nav__label">Portfolio</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#slide-3" class="nav__link links">
+                <span class="nav__dot"></span>
+                <span class="nav__label">Blog</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#slide-4" class="nav__link links">
+                <span class="nav__dot"></span>
+                <span class="nav__label">Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title heading heading-primary">
+          <span class="greeting"></span><span class="width">I'm Chao</span>
+        </h1>
+        <h2 class="header__tagline heading heading-tertiary">
+          Front-End Web Developer
+          <span class="width"><span class="accent">&</span>Unique Shoe Collector</span>
+        </h2>
+        <span class="scroll-hint">
+          <i class="fas fa-arrow-alt-circle-down" aria-label="scroll down"></i>
+        </span>
+      </div>
     </div>
   </header>
  <main id="main">
     <section class="about fs slide" id="slide-1">
-      <a href="#header" class="links links__section links__section-top">Header</a>
-      <h2 class="about__title heading heading-title slideInUp slideInUp4">About</h2>
-      <div class="wrapper">
-        <div class="about__content">
-          <div class="about__text-container">
-            <h3 class="heading heading-secondary slideInUp">I'm Chao</h3>
-            <p class="paragraph paragraph-title slideInUp slideInUp2">I believe computers are created to create.</p>
-            <p class="paragraph slideInUp slideInUp3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repudiandae error quam recusandae molestias animi quasi cumque laudantium eaque eum optio voluptate maiores atque, ipsa iusto delectus reiciendis iste ab hic. Voluptates sint fugit nemo voluptate saepe eius? Id voluptatum cumque quam vero consectetur rem eos. Vel, ab numquam itaque commodi quibusdam debitis quidem laborum suscipit maiores eius voluptatibus inventore velit sapiente nulla incidunt necessitatibus, placeat dolorum quia labore tempore officiis totam atque consequuntur magnam? Soluta, animi molestias repudiandae perspiciatis magni expedita veritatis cumque sunt quod architecto, dolorem libero voluptatum blanditiis exercitationem dolorum. Architecto, sit hic ullam recusandae at aliquam.
-            </p>
-          </div>
-          <div class="about__image-container image slideInUp slideInUp2">
-            <img src="assets/chao.jpg" alt="headshot of Chao sitting in a grey armchair wearing a jean top" class="about__image">
+      <div class="bcg">
+        <a href="#intro" class="links links__section links__section-top">Header</a>
+        <h2 class="about__title heading heading-title slideInUp slideInUp4">About</h2>
+        <div class="wrapper">
+          <div class="about__content">
+            <div class="about__text-container">
+              <h3 class="heading heading-secondary slideInUp">I'm Chao</h3>
+              <p class="paragraph paragraph-title slideInUp slideInUp2">I believe computers are created to create.</p>
+              <p class="paragraph slideInUp slideInUp3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repudiandae error quam recusandae molestias animi quasi cumque laudantium eaque eum optio voluptate maiores atque, ipsa iusto delectus reiciendis iste ab hic. Voluptates sint fugit nemo voluptate saepe eius? Id voluptatum cumque quam vero consectetur rem eos. Vel, ab numquam itaque commodi quibusdam debitis quidem laborum suscipit maiores eius voluptatibus inventore velit sapiente nulla incidunt necessitatibus, placeat dolorum quia labore tempore officiis totam atque consequuntur magnam? Soluta, animi molestias repudiandae perspiciatis magni expedita veritatis cumque sunt quod architecto, dolorem libero voluptatum blanditiis exercitationem dolorum. Architecto, sit hic ullam recusandae at aliquam.
+              </p>
+            </div>
+            <div class="about__image-container image slideInUp slideInUp2">
+              <img src="assets/chao.jpg" alt="headshot of Chao sitting in a grey armchair wearing a jean top" class="about__image">
+            </div>
           </div>
         </div>
+        <a href="#slide-2" class="links links__section links__section-bottom">Portfolio</a>
       </div>
-      <a href="#slide-2" class="links links__section links__section-bottom">Portfolio</a>
+    </section>
+    <section class="content-block" id="cb-1">
+      <!-- //placeholder for shoes -->
     </section>
     <section class="portfolio fs slide" id="slide-2">
-      <a href="#slide-1" class="links links__section links__section--accent links__section-top links__section-top--accent">About</a>
-      <h2 class="portfolio__title heading heading-title heading-title--accent slideInUp slideInUp5">Portfolio</h2>
-      <div class="wrapper">
-        <div class="portfolio__content">
-          <div class="portfolio__image-container slideInUp slideInUp3">
-            <img src="assets/projects/mondrian.png" alt="screenshot of the Mondrian front page" class="portfolio__image image">
-          </div>
-          <div class="portfolio__text-container slideInUp slideInUp2">
-            <h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">Mondrian in Style</h3>
-            <div class="portfolio__description paragraph paragraph--accent">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo tempore dolores rerum saepe laborum ipsam
-              molestias? Mollitia, necessitatibus praesentium!
+      <div class="bcg">
+        <a href="#slide-1" class="links links__section links__section-top">About</a>
+        <h2 class="portfolio__title heading heading-title slideInUp slideInUp5">Portfolio</h2>
+        <div class="wrapper">
+          <div class="portfolio__content">
+            <div class="portfolio__image-container slideInUp slideInUp3">
+              <img src="assets/projects/mondrian.png" alt="screenshot of the Mondrian front page" class="portfolio__image image">
             </div>
-            <div class="portfolio__icon-container">
-              <i class="portfolio__icon dev-icon devicon-html5-plain" title="HTML5" aria-label="HTML5"></i>
-              <i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
-              <i class="portfolio__icon dev-icon devicon-javascript-plain" title="Javascript" aria-label="Javascript"></i>
-              <i class="portfolio__icon dev-icon devicon-jquery-plain" title="jQuery" aria-label="jQuery"></i>
-              <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
-              <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
-              <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
-              <i class="portfolio__icon dev-icon devicon-visualstudio-plain" title="Visual Studio" aria-label="Visual Studio"></i>
-            </div>        
-            <div class="portfolio__button-container">
-              <!-- insert links for portfolio here -->
-              <a href="#" class="button portfolio__button">Visit</a>
-              <a href="https://github.com/chaoyue-zhao/chaoyue-zhao-project3" class="button portfolio__button">Code</a>
+            <div class="portfolio__text-container slideInUp slideInUp2">
+              <h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">Mondrian in Style</h3>
+              <div class="portfolio__description paragraph paragraph--accent">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo tempore dolores rerum saepe laborum ipsam
+                molestias? Mollitia, necessitatibus praesentium!
+              </div>
+              <div class="portfolio__icon-container">
+                <i class="portfolio__icon dev-icon devicon-html5-plain" title="HTML5" aria-label="HTML5"></i>
+                <i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
+                <i class="portfolio__icon dev-icon devicon-javascript-plain" title="Javascript" aria-label="Javascript"></i>
+                <i class="portfolio__icon dev-icon devicon-jquery-plain" title="jQuery" aria-label="jQuery"></i>
+                <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
+                <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
+                <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
+                <i class="portfolio__icon dev-icon devicon-visualstudio-plain" title="Visual Studio" aria-label="Visual Studio"></i>
+              </div>        
+              <div class="portfolio__button-container">
+                <!-- insert links for portfolio here -->
+                <a href="#" class="button portfolio__button">Visit</a>
+                <a href="https://github.com/chaoyue-zhao/chaoyue-zhao-project3" class="button portfolio__button">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__image-container">
+              <img src="assets/projects/thoughts.png" alt="screenshot of the Mondrian front page" class="portfolio__image image">
+            </div>
+            <div class="portfolio__text-container slideInUp sideInUp4">
+              <h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">What'cha Think'n</h3>
+              <div class="portfolio__description paragraph paragraph--accent">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo tempore dolores rerum saepe laborum ipsam
+                molestias? Mollitia, necessitatibus praesentium!
+              </div>
+              <div class="portfolio__icon-container">
+                <i class="portfolio__icon dev-icon devicon-react-original" title="React" aria-label="React"></i>
+                <img src="assets/dev/styled-components.png" title="styled-components" alt="styled-components" class="portfolio__icon dev-svg">
+                <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="portfolio__icon dev-svg">
+                <img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg">
+                <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
+                <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
+                <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
+                <i class="portfolio__icon dev-icon devicon-visualstudio-plain" title="Visual Studio" aria-label="Visual Studio"></i>
+              </div>
+              <div class="portfolio__button-container">
+                <!-- insert links for portfolio here -->
+                <a href="#" class="button portfolio__button">Visit</a>
+                <a href="https://github.com/chaoyue-zhao/chaoyue-zhao__project5" class="button portfolio__button">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__image-container">
+              <img src="assets/projects/memes.png" alt="screenshot of the Mondrian front page" class="portfolio__image image">
+            </div>
+            <div class="portfolio__text-container">
+              <h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">Meme in a Giffy</h3>
+              <div class="portfolio__description paragraph paragraph--accent">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo tempore dolores rerum saepe laborum ipsam
+                molestias? Mollitia, necessitatibus praesentium!
+              </div>
+              <div class="portfolio__icon-container">
+                <i class="portfolio__icon dev-icon devicon-react-original" title="React" aria-label="React"></i>
+                <i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
+                <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="portfolio__icon dev-svg">
+                <img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg">
+                <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
+                <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
+                <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
+                <i class="portfolio__icon dev-icon devicon-visualstudio-plain" title="Visual Studio" aria-label="Visual Studio"></i>
+              </div>
+              <div class="portfolio__button-container">
+                <!-- insert links for portfolio here -->
+                <a href="#" class="button portfolio__button">Visit</a>
+                <a href="https://github.com/meme-in-a-giffy/meme-in-a-giffy" class="button portfolio__button">Code</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="portfolio__content">
-          <div class="portfolio__image-container">
-            <img src="assets/projects/thoughts.png" alt="screenshot of the Mondrian front page" class="portfolio__image image">
-          </div>
-          <div class="portfolio__text-container slideInUp sideInUp4">
-            <h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">What'cha Think'n</h3>
-            <div class="portfolio__description paragraph paragraph--accent">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo tempore dolores rerum saepe laborum ipsam
-              molestias? Mollitia, necessitatibus praesentium!
-            </div>
-            <div class="portfolio__icon-container">
-              <i class="portfolio__icon dev-icon devicon-react-original" title="React" aria-label="React"></i>
-              <img src="assets/dev/styled-components.png" title="styled-components" alt="styled-components" class="portfolio__icon dev-svg">
-              <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="portfolio__icon dev-svg">
-              <img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg">
-              <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
-              <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
-              <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
-              <i class="portfolio__icon dev-icon devicon-visualstudio-plain" title="Visual Studio" aria-label="Visual Studio"></i>
-            </div>
-            <div class="portfolio__button-container">
-              <!-- insert links for portfolio here -->
-              <a href="#" class="button portfolio__button">Visit</a>
-              <a href="https://github.com/chaoyue-zhao/chaoyue-zhao__project5" class="button portfolio__button">Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio__content">
-          <div class="portfolio__image-container">
-            <img src="assets/projects/memes.png" alt="screenshot of the Mondrian front page" class="portfolio__image image">
-          </div>
-          <div class="portfolio__text-container">
-            <h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">Meme in a Giffy</h3>
-            <div class="portfolio__description paragraph paragraph--accent">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo tempore dolores rerum saepe laborum ipsam
-              molestias? Mollitia, necessitatibus praesentium!
-            </div>
-            <div class="portfolio__icon-container">
-              <i class="portfolio__icon dev-icon devicon-react-original" title="React" aria-label="React"></i>
-              <i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
-              <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="portfolio__icon dev-svg">
-              <img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg">
-              <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
-              <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
-              <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
-              <i class="portfolio__icon dev-icon devicon-visualstudio-plain" title="Visual Studio" aria-label="Visual Studio"></i>
-            </div>
-            <div class="portfolio__button-container">
-              <!-- insert links for portfolio here -->
-              <a href="#" class="button portfolio__button">Visit</a>
-              <a href="https://github.com/meme-in-a-giffy/meme-in-a-giffy" class="button portfolio__button">Code</a>
-            </div>
-          </div>
-        </div>
+        <a href="#slide-3" class="links links__section links__section--accent links__section-bottom">Blog</a>
       </div>
-      <a href="#slide-3" class="links links__section links__section--accent links__section-bottom links__section-bottom--accent">Blog</a>
+    </section>
+    <section class="content-block" id="cb-2">
+      <!-- //placeholder for shoes -->
     </section>
     <section class="blog fs slide" id="slide-3">
-      <a href="#slide-3" class="links links__section links__section-top links__section-portfolio">Portfolio</a>
-      <h2 class="blog__title heading heading-title slideInUp slideInUp4">Blog</h2>
-      <div class="wrapper">
-        <div class="blog__item slideInUp">
-          <div class="blog__image-container">
-            <img src="assets/blogs/blog1.jpg" alt="fruit sandwich on a blue ceramic plate" class="blog__image">
+      <div class="bcg">
+        <a href="#slide-2" class="links links__section links__section-top links__section-portfolio">Portfolio</a>
+        <h2 class="blog__title heading heading-title slideInUp slideInUp4">Blog</h2>
+        <div class="wrapper">
+          <div class="blog__item slideInUp">
+            <div class="blog__image-container">
+              <img src="assets/blogs/blog1.jpg" alt="fruit sandwich on a blue ceramic plate" class="blog__image">
+            </div>
+            <div class="blog__text-container">
+              <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">Making Axios API Calls to Yelp
+                Fusion inside React.js</h3>
+              <p class="blog__paragraph paragraph paragraph--accent">Steps to import data with Yelp Fusion API into your React app.</p>
+              <a href="https://medium.com/@chaoyue_zhao/how-to-make-axios-api-calls-with-yelp-fusion-inside-react-js-10755d8485c5" target="__blank" class= "blog__button button">Read</a>
+            </div>
           </div>
-          <div class="blog__text-container">
-            <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">Making Axios API Calls to Yelp
-              Fusion inside React.js</h3>
-            <p class="blog__paragraph paragraph paragraph--accent">Steps to import data with Yelp Fusion API into your React app.</p>
-            <a href="https://medium.com/@chaoyue_zhao/how-to-make-axios-api-calls-with-yelp-fusion-inside-react-js-10755d8485c5" target="__blank" class= "blog__button button">Read</a>
+          <div class="blog__item slideInUp slideInUp2">
+            <div class="blog__image-container">
+              <img src="assets/blogs/blog2.jpeg" alt="street view of a residence neighbourhood on a winter monring" class="blog__image">
+            </div>
+            <div class="blog__text-container">
+              <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">How I became a morning person</h3>
+              <p class="blog__paragraph paragraph paragraph--accent"> Your ultimate guide to join the early risers club so you can enjoy some gorgeous sunrises too.</p>
+              <a href="https://medium.com/@chaoyue_zhao/how-i-became-a-morning-person-91537d616d14" target="__blank" class="blog__button button">Read</a>
+            </div>
+          </div>
+          <div class="blog__item slideInUp slideInUp3">
+            <div class="blog__image-container">
+              <img src="assets/blogs/blog3.jpg" alt="Signs with my name (Chao Zhao) and the event title (visibility hidden) sitting on a table inside a dim room with blue and purple spot lights" class="blog__image">
+            </div>
+            <div class="blog__text-container">
+              <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">Things that shouldn’t stop you from
+                learning to code</h3>
+              <p class="blog__paragraph paragraph paragraph--accent">Because they didn’t stop me and I am a happy coder now.</p>
+              <a href="https://medium.com/@chaoyue_zhao/things-that-shouldnt-stop-you-from-learning-to-code-142ebcdf2624" target="__blank"
+                class="blog__button button">Read</a>
+            </div>
           </div>
         </div>
-        <div class="blog__item slideInUp slideInUp2">
-          <div class="blog__image-container">
-            <img src="assets/blogs/blog2.jpeg" alt="street view of a residence neighbourhood on a winter monring" class="blog__image">
-          </div>
-          <div class="blog__text-container">
-            <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">How I became a morning person</h3>
-            <p class="blog__paragraph paragraph paragraph--accent"> Your ultimate guide to join the early risers club so you can enjoy some gorgeous sunrises too.</p>
-            <a href="https://medium.com/@chaoyue_zhao/how-i-became-a-morning-person-91537d616d14" target="__blank" class="blog__button button">Read</a>
-          </div>
-        </div>
-        <div class="blog__item slideInUp slideInUp3">
-          <div class="blog__image-container">
-            <img src="assets/blogs/blog3.jpg" alt="Signs with my name (Chao Zhao) and the event title (visibility hidden) sitting on a table inside a dim room with blue and purple spot lights" class="blog__image">
-          </div>
-          <div class="blog__text-container">
-            <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">Things that shouldn’t stop you from
-              learning to code</h3>
-            <p class="blog__paragraph paragraph paragraph--accent">Because they didn’t stop me and I am a happy coder now.</p>
-            <a href="https://medium.com/@chaoyue_zhao/things-that-shouldnt-stop-you-from-learning-to-code-142ebcdf2624" target="__blank"
-              class="blog__button button">Read</a>
-          </div>
-        </div>
+        <a href="#slide-4" class="links links__section links__section-bottom">Contact</a>
       </div>
-      <a href="#slide-4" class="links links__section links__section-bottom">Contact</a>
     </section>
     <section class="contact fs slide" id="slide-4">
       <h2 class="contact__title heading heading-title heading-title--accent slideInUp slideInUp3">Contact <span class="heading-title">Me</span></h2>

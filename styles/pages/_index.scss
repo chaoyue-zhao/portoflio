@@ -1,6 +1,15 @@
 .about {
-  @include section-style;
-  position: relative;
+  
+  .bcg {
+    background: no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    position: relative;
+    @include section-style;
+  }
 
   &__title {
     text-align: center;
@@ -40,13 +49,15 @@
 }
 
 .portfolio {
-  background: url(../assets/bg-img.png) no-repeat;
-  background-size: cover;
-  @include section-style;
-  padding-top: 5%;
-  display: grid; 
-  grid-template-columns: 20px 1fr 20px;
-  align-content: start;
+  
+  .bcg {
+    background: $white;
+    @include section-style;
+    padding-top: 5%;
+    display: grid; 
+    grid-template-columns: 20px 1fr 20px;
+    align-content: start;
+  }
 
   .wrapper {
     grid-column: 1 / -1;
@@ -67,10 +78,13 @@
 }
 
 .blog {
-  @include section-style;
-  padding-top: 10%;
-  background: $grey;
-  overflow: hidden;
+  
+  .bcg {
+    @include section-style;
+    padding-top: 10%;
+    background: $white;
+    overflow: hidden;
+  }
   
   .wrapper { 
     display: grid;

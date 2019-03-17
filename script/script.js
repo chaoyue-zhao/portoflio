@@ -21,14 +21,14 @@ chao.parallax = () => {
   let controller = new ScrollMagic.Controller();
 
   // get all triggers
-  const triggers = ["#slide-1", "#slide-2", "#slide-3", "#slide-4"];
+  const triggers = ["#slide-1 h2", "#slide-2 h2", "#slide-3 h2", "#slide-4 h2"];
 
   // create scenes for each of the triggers
   triggers.forEach(function (trigger, index) {
 
     // number for highlighting scenes
     const num = index + 1;
-    
+
     // make scene
     const triggerScene = new ScrollMagic.Scene({
       triggerElement: trigger,
@@ -36,8 +36,61 @@ chao.parallax = () => {
     })
       .setClassToggle("#slide-" + num, "is-active")
       .addTo(controller);
- })
+  })
+
+  // move bcg container when slide gets into the view
+  triggers.forEach(function (trigger, index) {
+
+    const $bcg = $(trigger).find('.bcg');
+
+    const triggerParallaxScene = new ScrollMagic.Scene({
+      triggerElement: trigger,
+      triggerHook: 1,
+      duration: "100%"
+    })
+      .setTween(TweenMax.from($bcg, 1, { y: '-40%', autoAlpha: 0.3, ease: Power0.easeNone }))
+      .addTo(controller);
+  });
+
+  // move bcg container when intro gets out of the the view
+    const introTl = new TimelineMax();
+
+    introTl
+      .to($('#intro h1, #intro h2, #intro nav, .scroll-hint'), 0.2, { autoAlpha: 0, ease: Power0.easeNone })
+      .to($('#intro.bcg'), 1.4, { y: '20%', ease: Power1.easeOut }, '-=0.2')
+      .to($('#intro'), 0.7, { autoAlpha: 0.7, ease: Power0.easeNone }, '-=1.4');
+
+    const introScene = new ScrollMagic.Scene({
+      triggerElement: '#intro',
+      triggerHook: 0,
+      duration: "100%"
+    })
+    .setTween(introTl)
+    .addTo(controller);
+
+  // change behaviour of controller to animate scroll instead of jump
+    controller.scrollTo(function (newpos) {
+      TweenMax.to(window, 1, { scrollTo: { y: newpos }, ease: Power1.easeInOut });
+    });
+
+   //  bind scroll to anchor links
+   $(document).on("click", "a[href^='#']", function (e) {
+    var id = $(this).attr("href");
+    if ($(id).length > 0) {
+      e.preventDefault();
+
+      // trigger scroll
+      controller.scrollTo(id);
+
+      // if supported by the browser we can even update the URL.
+      if (window.history && window.history.pushState) {
+        history.pushState("", document.title, id);
+      }
+    }
+  });
+
 }
+
 chao.init = () => {
   chao.greeting();
   chao.parallax();
