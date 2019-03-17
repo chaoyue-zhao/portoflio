@@ -352,21 +352,6 @@ body {
   font-style: initial;
 }
 
-.dev-icon,
-.dev-svg {
-  margin-right: 1.3rem;
-}
-
-.dev-icon {
-  color: #f8f8f8;
-  font-size: 2rem;
-}
-
-.dev-svg {
-  fill: #f8f8f8;
-  width: 2em;
-}
-
 .button {
   color: #f8f8f8;
   background: none;
@@ -615,6 +600,32 @@ body {
 
 .header__link {
   text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.header__link:hover, .header__link:focus {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.header__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0.3;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  background: #99E3DC;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 .portfolio__title {
@@ -629,13 +640,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 2rem;
 }
 
 .portfolio__image-container {
   height: 70%;
-  width: 60%;
-  margin: 8% 0;
+  width: 50%;
 }
 
 .portfolio__image {
@@ -647,8 +660,9 @@ body {
 
 .portfolio__text-container {
   background: #16524c;
-  width: 35%;
-  padding: 2rem;
+  width: 40%;
+  height: 100%;
+  padding: 1rem 4rem 2rem 2rem;
   -webkit-box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
           box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
   -webkit-box-ordinal-group: 0;
@@ -657,16 +671,35 @@ body {
   position: relative;
 }
 
-.portfolio__icon:nth-child(4n) {
-  margin-right: 0;
+.portfolio__project-title, .portfolio__description {
+  margin-bottom: 1rem;
 }
 
-.portfolio__project-title, .portfolio__icon-container, .portfolio__description {
+.portfolio__icon-container {
   margin-bottom: 2rem;
+}
+
+.portfolio__icon:nth-child(4) {
+  margin-right: 5rem;
 }
 
 .portfolio__button:first-child {
   margin-right: 1rem;
+}
+
+.dev-icon,
+.dev-svg {
+  margin-right: 1.8rem;
+}
+
+.dev-icon {
+  color: #f8f8f8;
+  font-size: 2rem;
+}
+
+.dev-svg {
+  fill: #f8f8f8;
+  width: 2em;
 }
 
 .footer {
@@ -752,6 +785,10 @@ body {
 .header .accent {
   color: #f8f8f8;
   margin-right: 10px;
+}
+
+.fs {
+  height: 100vh;
 }
 
 .about {
@@ -872,7 +909,7 @@ body {
 
 .blog__image-container {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   overflow: hidden;
 }
 
@@ -894,7 +931,7 @@ body {
 .blog__text-container {
   padding: 1rem 10px;
   background: #16524c;
-  height: 35vh;
+  height: 30vh;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   display: -webkit-box;

@@ -7,13 +7,13 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-right: $medium-gap;
   }
 
   &__image-container {
     height: 70%;
-    width: 60%;
-    margin: 8% 0;
+    width: 50%;
   }
   
   &__image {
@@ -24,21 +24,26 @@
 
   &__text-container {
     background: $primary-color;
-    width: 35%;
-    padding: $medium-gap; 
+    width: 40%;
+    height: 100%;
+    padding: $small-gap $big-gap $medium-gap $medium-gap; 
     @include box-shadow;
     order: -1;
     position: relative;
   }
 
-  &__icon:nth-child(4n) {
-    margin-right: 0;
-  }
 
   &__project-title, 
-  &__icon-container,
-  &__description {
+  &__description, {
+    margin-bottom: $small-gap;
+  }
+
+  &__icon-container {
     margin-bottom: $medium-gap;
+  }
+
+  &__icon:nth-child(4) {
+    margin-right: 5rem;
   }
 
   &__button {
@@ -47,4 +52,19 @@
       margin-right: $small-gap;
     }
   }
+}
+
+.dev-icon, 
+.dev-svg {
+  margin-right: 1.8rem;
+}
+
+.dev-icon {
+  color: $white;
+  font-size: 2rem;
+}
+
+.dev-svg {
+  fill: $white; 
+  width: 2em;
 }

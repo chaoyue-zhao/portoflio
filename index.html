@@ -12,7 +12,7 @@
   <title>Chaoyue Zhao // Front-End Web Developer // Toronto </title>
 </head>
 <body>
-  <header class="header" id="header">
+  <header class="header fs" id="header">
     <div class="wrapper">
       <nav class="header__nav">
         <ul class="header__list">
@@ -38,7 +38,7 @@
     </div>
   </header>
  <main id="main">
-    <section class="about" id="about">
+    <section class="about fs" id="about">
       <a href="#header" class="links links__section links__section-top">Header</a>
       <h2 class="about__title heading heading-title">About</h2>
       <div class="wrapper">
@@ -57,7 +57,7 @@
       </div>
       <a href="#portfolio" class="links links__section links__section-bottom">Portfolio</a>
     </section>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio fs" id="portfolio">
       <a href="#about" class="links links__section links__section--accent links__section-top links__section-top--accent">About</a>
       <h2 class="portfolio__title heading heading-title heading-title--accent">Portfolio</h2>
       <div class="wrapper">
@@ -100,9 +100,9 @@
             </div>
             <div class="portfolio__icon-container">
               <i class="portfolio__icon dev-icon devicon-react-original" title="React" aria-label="React"></i>
-              <img src="assets/dev/styled-components.png" title="styled-components" alt="styled-components" class="dev-svg">
-              <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="dev-svg">
-              <img src="assets/dev/api.svg" title="API" alt="API" class="dev-svg">
+              <img src="assets/dev/styled-components.png" title="styled-components" alt="styled-components" class="portfolio__icon dev-svg">
+              <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="portfolio__icon dev-svg">
+              <img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg">
               <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
               <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
               <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
@@ -128,8 +128,8 @@
             <div class="portfolio__icon-container">
               <i class="portfolio__icon dev-icon devicon-react-original" title="React" aria-label="React"></i>
               <i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
-              <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="dev-svg">
-              <img src="assets/dev/api.svg" title="API" alt="API" class="dev-svg">
+              <img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="portfolio__icon dev-svg">
+              <img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg">
               <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg">
               <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg">
               <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
@@ -145,7 +145,7 @@
       </div>
       <a href="#blog" class="links links__section links__section--accent links__section-bottom links__section-bottom--accent">Blog</a>
     </section>
-    <section class="blog" id="blog">
+    <section class="blog fs" id="blog">
       <a href="#portfolio" class="links links__section links__section-top links__section-portfolio">Portfolio</a>
       <h2 class="blog__title heading heading-title">Blog</h2>
       <div class="wrapper">
@@ -185,7 +185,7 @@
       </div>
       <a href="#contact" class="links links__section links__section-bottom">Contact</a>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact fs" id="contact">
       <h2 class="contact__title heading heading-title heading-title--accent">Contact <span class="heading-title">Me</span></h2>
       <div class="wrapper">
         <form action="http://www.focuspocus.io/magic/491ed8d7ffababbf578b55288d3522ee" method="POST" class="contact__form form">
@@ -211,7 +211,7 @@
       </div>
     </section>
  </main>
- <footer class="footer">
+ <footer class="footerportfolio__icon ">
   <div class="wrapper">
       <section class="footer__social-media">
         <a href="" class="links footer__links">
@@ -239,6 +239,13 @@
       </p>
   </div>
  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
   <script src="script/script.js">
   </script>
 </body>
