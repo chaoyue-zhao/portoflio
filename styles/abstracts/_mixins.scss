@@ -67,3 +67,11 @@
     @content;
   }
 }
+
+@mixin parallex-background {
+  background-position: center bottom;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

@@ -17,11 +17,16 @@ chao.greeting = () => {
 
 chao.parallax = () => {
 
+  /**************************************************************
+   THIS LOVELY BLOGPOST ON PARALLEX FROM PETR TICHY SAVED MY LIFE
+   CREDIT HERE: https://t.co/CwcyHXK1g5?amp=1
+   **************************************************************/
+  
   // Init ScrollMagic
   let controller = new ScrollMagic.Controller();
 
   // get all triggers
-  const triggers = ["#slide-1 h2", "#slide-2 h2", "#slide-3 h2", "#slide-4 h2"];
+  const triggers = ["#slide-1", "#slide-2", "#slide-3", "#slide-4"];
 
   // create scenes for each of the triggers
   triggers.forEach(function (trigger, index) {
@@ -32,7 +37,7 @@ chao.parallax = () => {
     // make scene
     const triggerScene = new ScrollMagic.Scene({
       triggerElement: trigger,
-      offset: -95
+      offset: 95
     })
       .setClassToggle("#slide-" + num, "is-active")
       .addTo(controller);
@@ -68,7 +73,7 @@ chao.parallax = () => {
     .setTween(introTl)
     .addTo(controller);
 
-  // change behaviour of controller to animate scroll instead of jump
+  // change behavior of controller to animate scroll instead of jump
     controller.scrollTo(function (newpos) {
       TweenMax.to(window, 1, { scrollTo: { y: newpos }, ease: Power1.easeInOut });
     });

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/logo-black.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,500i|Vidaloka" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -14,6 +15,7 @@
 <body>
   <header class="header fs" id="intro">
     <div class="bcg">
+      <img src="assets/logo-white.png" alt="logo" class="logo">
       <div class="wrapper">
         <nav class="nav__nav">
           <ul class="nav__list">
@@ -44,7 +46,7 @@
         </h1>
         <h2 class="header__tagline heading heading-tertiary">
           Front-End Web Developer
-          <span class="width"><span class="accent">&</span>Unique Shoe Collector</span>
+          <span class="width">living in Toronto, Canada</span>
         </h2>
         <span class="scroll-hint">
           <i class="fas fa-arrow-alt-circle-down" aria-label="scroll down"></i>
@@ -213,28 +215,30 @@
       </div>
     </section>
     <section class="contact fs slide" id="slide-4">
-      <h2 class="contact__title heading heading-title heading-title--accent slideInUp slideInUp3">Contact <span class="heading-title">Me</span></h2>
-      <div class="wrapper">
-        <form action="http://www.focuspocus.io/magic/491ed8d7ffababbf578b55288d3522ee" method="POST" class="contact__form form">
-          <p class="form__paragraph paragraph slideInUp">It all starts with saying hi. Fill the form below to contact me!</p>
-          
-          <div class="form__input-container slideInUp slideInup2">
-            <input type="text" name="name" id="name" placeholder="Name*" class="form__input" required>
-            <label for="name" class="form__label">Name*</label>
-          </div>
-
-          <div class="form__input-container slideInUp slideInUp2">
-            <input type="email" name="email" id="email" placeholder="Email address*" class="form__input" required>
-            <label for="email" class="form__label">Email address*</label>
-          </div>
-
-          <div class="form__input-container slideInUp slideInup2">
-            <textarea name="message" id="message" cols="20" rows="10" placeholder="Your message*" class="form__input" required></textarea>
-            <label for="message" class="form__label">Your message*</label>
-          </div>
-
-          <button type="submit" class="form__button button slideInUp slideInUp3">Send Message</button>
-        </form>
+      <div class="bcg">
+        <h2 class="contact__title heading heading-title heading-title--accent slideInUp slideInUp3">Contact <span class="heading-title">Me</span></h2>
+        <div class="wrapper">
+          <form action="http://www.focuspocus.io/magic/491ed8d7ffababbf578b55288d3522ee" method="POST" class="contact__form form">
+            <p class="form__paragraph paragraph slideInUp">It all starts with saying hi. Fill the form below to contact me!</p>
+            
+            <div class="form__input-container slideInUp slideInup2">
+              <input type="text" name="name" id="name" placeholder="Name*" class="form__input" required>
+              <label for="name" class="form__label">Name*</label>
+            </div>
+  
+            <div class="form__input-container slideInUp slideInUp2">
+              <input type="email" name="email" id="email" placeholder="Email address*" class="form__input" required>
+              <label for="email" class="form__label">Email address*</label>
+            </div>
+  
+            <div class="form__input-container slideInUp slideInup2">
+              <textarea name="message" id="message" cols="20" rows="10" placeholder="Your message*" class="form__input" required></textarea>
+              <label for="message" class="form__label">Your message*</label>
+            </div>
+  
+            <button type="submit" class="form__button button slideInUp slideInUp3">Send Message</button>
+          </form>
+        </div>
       </div>
     </section>
  </main>

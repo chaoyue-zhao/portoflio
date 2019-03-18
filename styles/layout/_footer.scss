@@ -15,8 +15,7 @@
     transition: all .2s linear;
 
       &:hover {
-        color: $secondary-color;
-        transform: scale(1.5);
+        animation: jello-horizontal 0.9s both;
       }
   }
 
