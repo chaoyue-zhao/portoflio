@@ -712,42 +712,53 @@ body {
 
 .nav__link {
   text-decoration: none;
-  padding-right: 2rem;
   position: relative;
-  display: block;
+  display: inline-block;
 }
 
-.nav__link:hover .nav__label,
-.nav__link:focus .nav__label {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
+.nav__link:hover::before, .nav__link:focus::before {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
 }
 
-.nav__dot {
+.nav__link::before {
+  content: "";
   display: block;
-  width: 1rem;
-  height: 1rem;
   position: absolute;
-  right: 0;
-  top: 50%;
-  background: #f8f8f8;
-  border-radius: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0.3;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  background: #99E3DC;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.nav__label {
+.nav__label::before, .nav__label::after {
+  z-index: 100;
+  content: "";
   display: block;
-  opacity: 0.5;
-  visibility: hidden;
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-  -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  position: absolute;
+  background: #f8f8f8;
+  width: 3rem;
+  height: 5px;
+  top: 15%;
+  right: 4rem;
+}
+
+.nav__label::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .portfolio__title {
@@ -905,7 +916,7 @@ body {
   font-size: 3rem;
   color: #f8f8f8;
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -958,6 +969,7 @@ body {
 .content-block {
   height: 40vh;
   background: #16524c;
+  z-index: 30;
 }
 
 .about .bcg {

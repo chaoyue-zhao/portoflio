@@ -15,6 +15,12 @@ chao.greeting = () => {
   }
 };
 
+chao.navigation = () => {
+  document.querySelector('.nav__label').click(() => {
+    
+  })
+}
+
 chao.parallax = () => {
 
   /**************************************************************
