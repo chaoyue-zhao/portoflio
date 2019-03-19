@@ -2,19 +2,26 @@
   .bcg {
     background: url(../assets/hero-img.png) no-repeat;
     @include parallex-background;
-    z-index: 5;
+    z-index: 10;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
   }
 
-  .logo {
-    width: 3rem;
-    display: block;
-    margin: 6%;
-  }
-
-  &__title,
-  &__tagline {
+  &__text-container {
     text-align: right;
-    margin-right: 50%;
+    margin-right: 25%;
+  }
+
+  &__logo {
+    display: block;
+    width: 3rem;
+    align-self: flex-start;
   }
 
   &__tagline {
@@ -30,15 +37,12 @@
     color: $white;
     margin-right: $tiny-gap;
   }
+
+  .scroll-hint {
+    font-size: 2.5rem;
+    color: $white;
+    display: inline-block;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  }
 }
 
-.scroll-hint {
-  font-size: 2.5rem;
-  color: $white;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  animation: pulsate-fwd 0.5s ease-in-out infinite both;
-}

@@ -5,7 +5,6 @@
     position: relative;
     @include section-style;
     @include parallex-background;
-    z-index: 4;
   }
 
   &__title {
@@ -16,7 +15,7 @@
   }
 
   &__content {
-    border: 2px solid $primary-color;
+    border: 1px solid $primary-color;
     display: flex;
     justify-content: flex-end;
     padding: 2%;
@@ -55,7 +54,6 @@
     grid-template-columns: 20px 1fr 20px;
     align-content: start;
     @include parallex-background;
-    z-index: 3;
   }
 
   .wrapper {
@@ -74,6 +72,11 @@
       content: "";
     }
   }
+
+  &__title {
+    position: relative;
+    top: -10px;
+  }
 }
 
 .blog {
@@ -83,13 +86,13 @@
     padding-top: 10%;
     background: $white;
     overflow: hidden;
-    z-index: 2;
   }
   
   .wrapper { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     grid-column-gap: $medium-gap;
+    position: relative;
   }
 
   &__item {
@@ -99,8 +102,7 @@
   &__title {
     position: absolute;
     right: 0;
-    top: 2%;
-
+    top: -8rem;
   }
 
   &__image-container {
@@ -124,7 +126,7 @@
   &__text-container{
     padding: $small-gap $tiny-gap;
     background: $primary-color;
-    height: 42vh;
+    height: 38vh;
     transition: all .2s linear;
     @include vertical-flex-center;
     text-align: center;
@@ -141,16 +143,15 @@
     background: url(../assets/contact-img.png) no-repeat;
     @include parallex-background;
     background-size: 50%;
-    background-position: 0 0;
-    z-index: 1;
+    background-position: left bottom;
   }
 
   &__title {
-   margin-left: 14rem;
+   margin-left: 13.5rem;
   }
 
   &__form {
-    width: 50%;
-    margin-left: 45vw;
+    width: 45%;
+    margin-left: 50vw;
   }
 }

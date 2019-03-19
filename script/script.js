@@ -19,7 +19,6 @@ chao.navigation = () => {
   $('.nav__button').on("click", () => {
     $('.nav__nav').toggleClass("open");
     $('.nav__overlay').toggleClass("open");
-    $('.nav__button::before').toggleClass("open");
   })
 }
 
@@ -44,7 +43,8 @@ chao.parallax = () => {
 
     // make scene
     const triggerScene = new ScrollMagic.Scene({
-      triggerElement: trigger
+      triggerElement: trigger,
+      offset: 95
     })
       .setClassToggle("#slide-" + num, "is-active")
       .addTo(controller);
@@ -58,7 +58,7 @@ chao.parallax = () => {
     const triggerParallaxScene = new ScrollMagic.Scene({
       triggerElement: trigger,
       triggerHook: 1,
-      duration: "100%"
+      duration: "80%"
     })
       .setTween(TweenMax.from($bcg, 1, { y: '-40%', autoAlpha: 0.3, ease: Power0.easeNone }))
       .addTo(controller);

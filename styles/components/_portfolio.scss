@@ -8,8 +8,9 @@
   }
 
   &__image-container {
-    height: 70%;
-    width: 50%;
+    height: 60%;
+    width: 45%;
+    margin-right: $big-gap;
   }
   
   &__image {
@@ -20,7 +21,7 @@
 
   &__text-container {
     background: $primary-color;
-    width: 40%;
+    width: 45%;
     height: 100%;
     padding: $small-gap $medium-gap; 
     @include box-shadow;
@@ -38,6 +39,7 @@
   }
 
   &__button {
+    margin-bottom: $small-gap;
 
     &:first-child {
       margin-right: $small-gap;
@@ -47,15 +49,15 @@
 
 .dev-icon, 
 .dev-svg {
-  margin-right: 1.5rem;
+  margin-right: 1.8rem;
 }
 
 .dev-icon {
   color: $white;
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 .dev-svg {
   fill: $white; 
-  width: 2em;
+  width: 1.9em;
 }
