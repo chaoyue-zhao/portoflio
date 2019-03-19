@@ -11,8 +11,8 @@
   &__title {
     text-align: center;
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: -5px;
+    left: 40%;
   }
 
   &__content {
@@ -50,7 +50,7 @@
   .bcg {
     background: $white;
     @include section-style;
-    padding-top: 5%;
+    padding-top: 2%;
     display: grid; 
     grid-template-columns: 20px 1fr 20px;
     align-content: start;
@@ -88,7 +88,7 @@
   
   .wrapper { 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     grid-column-gap: $medium-gap;
   }
 
@@ -124,7 +124,7 @@
   &__text-container{
     padding: $small-gap $tiny-gap;
     background: $primary-color;
-    height: 30vh;
+    height: 42vh;
     transition: all .2s linear;
     @include vertical-flex-center;
     text-align: center;

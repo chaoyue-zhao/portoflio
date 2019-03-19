@@ -16,8 +16,10 @@ chao.greeting = () => {
 };
 
 chao.navigation = () => {
-  document.querySelector('.nav__label').click(() => {
-    
+  $('.nav__button').on("click", () => {
+    $('.nav__nav').toggleClass("open");
+    $('.nav__overlay').toggleClass("open");
+    $('.nav__button::before').toggleClass("open");
   })
 }
 
@@ -42,8 +44,7 @@ chao.parallax = () => {
 
     // make scene
     const triggerScene = new ScrollMagic.Scene({
-      triggerElement: trigger,
-      offset: 95
+      triggerElement: trigger
     })
       .setClassToggle("#slide-" + num, "is-active")
       .addTo(controller);
@@ -99,12 +100,12 @@ chao.parallax = () => {
       }
     }
   });
-
 }
 
 chao.init = () => {
   chao.greeting();
   chao.parallax();
+  chao.navigation();
 };
 
 (function () {

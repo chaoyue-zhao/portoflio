@@ -1,5 +1,4 @@
 .header {
-
   .bcg {
     background: url(../assets/hero-img.png) no-repeat;
     @include parallex-background;
@@ -7,15 +6,14 @@
   }
 
   .logo {
-    width: 4rem;
+    width: 3rem;
     display: block;
-    margin: $big-gap;
+    margin: 6%;
   }
 
-  &__title, 
+  &__title,
   &__tagline {
     text-align: right;
-    margin-top: 5%;
     margin-right: 50%;
   }
 
@@ -35,7 +33,7 @@
 }
 
 .scroll-hint {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: $white;
   position: absolute;
   bottom: 5%;
@@ -44,4 +42,3 @@
   z-index: 2;
   animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
-
