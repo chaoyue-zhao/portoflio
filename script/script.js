@@ -104,8 +104,12 @@ chao.parallax = () => {
 
 chao.init = () => {
   chao.greeting();
-  chao.parallax();
   chao.navigation();
+  
+  if ($(window).width() >= 1050) {
+    // do some magic
+    chao.parallax();
+  }
 };
 
 (function () {

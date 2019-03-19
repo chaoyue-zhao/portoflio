@@ -20,8 +20,9 @@ body {
       line-height: 4rem;
     }
 
-    @include media(830px) {
-      
+    @include media(730px) {
+      font-size: 3rem;
+      line-height: 3rem;
     }
   }
 
@@ -40,6 +41,10 @@ body {
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 1.2;
+
+    @include media(730px) {
+      font-size: 1.2rem;
+    }
   }
 
   &-title {

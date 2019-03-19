@@ -8,6 +8,10 @@
     width: 100%;
     @include vertical-flex-left;
 
+    @include media (1150px) {
+      color: $white;
+    }
+
     &:focus {
       outline: none;
       border: 2px solid $secondary-color;
@@ -27,6 +31,10 @@
     margin-left: $medium-gap;
     display: block;
     transition: all 0.3s;
+
+    @include media (1150px) {
+      color: $white;
+    }
   }
 
   &__input:placeholder-shown + &__label {
@@ -46,5 +54,9 @@
   &__button, 
   textarea {
     margin-bottom: $medium-gap;
+
+    @include media (1150px) {
+      color: $white;
+    }
   }
 }

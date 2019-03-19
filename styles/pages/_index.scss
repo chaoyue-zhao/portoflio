@@ -5,6 +5,11 @@
     position: relative;
     @include section-style;
     @include parallex-background;
+
+    @include media(1150px) {
+      padding: 0;
+      height: 100vh;
+    }
   }
 
   &__title {
@@ -12,6 +17,10 @@
     position: absolute;
     top: -5px;
     left: 40%;
+
+    @include media(1150px) {
+      position: static;
+    }
   }
 
   &__content {
@@ -21,6 +30,10 @@
     padding: 2%;
     position: relative;
     background: $white;
+
+    @include media(1150px) {
+      @include vertical-flex-center;
+    }
   }
 
   &__image-container {
@@ -31,6 +44,15 @@
     top: -50px;
     left: -50px;
     @include box-shadow;
+    
+    @include media(1150px) {
+      width: 60%;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      overflow: hidden;
+    }
   }
 
   &__image {
@@ -41,6 +63,10 @@
 
   &__text-container {
     width: 65%;
+
+    @include media(1150px) {
+      width: 80%;
+    }
   }
 }
 
@@ -54,6 +80,10 @@
     grid-template-columns: 20px 1fr 20px;
     align-content: start;
     @include parallex-background;
+
+    @include media (1150px) {
+      padding-top: 8%;
+    }
   }
 
   .wrapper {
@@ -67,6 +97,10 @@
     scroll-snap-type: x proximity;
     transform: translateY(-20%);
 
+    @include media(1150px) {
+      display: block;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -76,6 +110,10 @@
   &__title {
     position: relative;
     top: -10px;
+
+    @include media (1150px) {
+      top: 0;
+    }
   }
 }
 
@@ -85,13 +123,13 @@
     @include section-style;
     padding-top: 10%;
     background: $white;
-    overflow: hidden;
+    overflow: visible;
   }
   
   .wrapper { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-    grid-column-gap: $medium-gap;
+    grid-gap: $medium-gap;
     position: relative;
   }
 
@@ -103,6 +141,12 @@
     position: absolute;
     right: 0;
     top: -8rem;
+
+    @include media (1150px) {
+      top: 0;
+      position: static;
+      text-align: center;
+    }
   }
 
   &__image-container {
@@ -144,14 +188,28 @@
     @include parallex-background;
     background-size: 50%;
     background-position: left bottom;
+
+    @include media (1150px) {
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__title {
    margin-left: 13.5rem;
+
+   @include media (1150px) {
+     margin-left: 0;
+   }
   }
 
   &__form {
     width: 45%;
     margin-left: 50vw;
+
+    @include media (1150px) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }

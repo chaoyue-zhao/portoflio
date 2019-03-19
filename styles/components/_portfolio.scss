@@ -5,6 +5,15 @@
     justify-content: space-between;
     align-items: center;
     margin-right: $medium-gap;
+
+    &:first-of-type,
+    &:last-of-type {
+      background: $grey;
+    }
+ 
+    &:nth-of-type(2) {
+      background: $primary-color;
+    }
   }
 
   &__image-container {
@@ -36,6 +45,13 @@
 
   &__icon-container {
     margin-bottom: $medium-gap;
+  }
+  
+  &__icon {
+
+    &:nth-child(4) {
+      margin-right: 5rem;
+    }
   }
 
   &__button {

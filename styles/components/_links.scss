@@ -13,9 +13,17 @@
     color: $primary-color;
     width: 100px;
     position: absolute;
+
+    @include media (1150px) {
+      display: none;
+    }
     
     &--accent {
       color: $white;
+
+      @include media (1150px) {
+        display: none;
+      }
     }
   }
   

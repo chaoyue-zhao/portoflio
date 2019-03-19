@@ -1,5 +1,9 @@
 .fs {
   height: 100vh;
+
+  @include media(1150px) {
+    height: auto;
+  }
 }
 
 /* =Simple animation up */
@@ -8,6 +12,12 @@
   opacity: 0;
   transition: all 0.7s ease-out;
   transform: translate3d(0, 100px, 0);
+
+  @include media (1150px) {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 
   .is-active & {
     visibility: visible;
