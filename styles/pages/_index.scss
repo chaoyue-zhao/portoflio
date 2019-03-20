@@ -23,7 +23,7 @@
     justify-content: flex-end;
     padding: 2%;
     position: relative;
-    top: -35px;
+    top: -60px;
     background: $white;
 
     @include media(1150px) {
@@ -43,12 +43,24 @@
     
     @include media(1150px) {
       width: 50%;
-      height: 60vh;
+      height: 300px;
       margin: 0 auto;
       top: 0;
       left: 0;
-      border-radius: 50%;
-      overflow: hidden;
+    }
+
+    @include media(850px) {
+      width: 50%;
+      height: 40vh;
+    }
+
+    @include media(600px) {
+      width: 60%;
+      height: 30vh;
+    }
+
+    @include media(350px) {
+      width: 70%;
     }
   }
 
@@ -63,6 +75,15 @@
 
     @include media(1150px) {
       width: 80%;
+      text-align: center;
+    }
+
+    @include media(870px) {
+      width: 90%;
+    }
+    
+    @include media(500px) {
+      width: 95%;
     }
   }
 }

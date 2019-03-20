@@ -71,6 +71,14 @@ body {
   margin: 0;
   padding: 0;
 
+  @include media(660px) {
+    font-size: 0.9rem;
+  }
+
+  @include media(500px) {
+    font-size: 0.8rem;
+  }
+
   &--accent {
     color: $white;
   }
@@ -81,7 +89,7 @@ body {
     font-style: italic;
     color:$primary-color;
     margin-bottom: $small-gap;
-
+    
     &--accent {
       color: $white;
       font-style: initial;

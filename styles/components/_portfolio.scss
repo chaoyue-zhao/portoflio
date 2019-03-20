@@ -1,5 +1,14 @@
 .portfolio {
 
+  .main-carousel::after {
+    content: "flickity";
+    display: none;
+
+    @include media (1150px) {
+      content: "";
+    }
+  }
+
   &__title {
     position: relative;
     top: 6%;
@@ -23,15 +32,6 @@
     @include media (1150px) {
       @include vertical-flex-center;
       margin-bottom: $big-gap;
-    }
-
-    &::after {
-      content: "flickity";
-      display: none;
-
-      @include media (1150px) {
-        content: "";
-      }
     }
   }
 
