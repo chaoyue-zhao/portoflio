@@ -16,7 +16,8 @@ chao.greeting = () => {
 };
 
 chao.navigation = () => {
-  $('.nav__button').on("click", () => {
+  $('.nav__button').on("click", (e) => {
+    console.log(e.target);
     $('.nav__nav').toggleClass("open");
     $('.nav__overlay').toggleClass("open");
   })
@@ -75,7 +76,7 @@ chao.parallax = () => {
     const introTl = new TimelineMax();
 
     introTl
-      .to($('#intro h1, #intro h2, #intro nav, .scroll-hint'), 0.2, { autoAlpha: 0, ease: Power0.easeNone })
+      .to($('#intro h1, #intro h2, .scroll-hint'), 0.2, { autoAlpha: 0, ease: Power0.easeNone })
       .to($('#intro.bcg'), 1.4, { y: '20%', ease: Power1.easeOut }, '-=0.2')
       .to($('#intro'), 0.7, { autoAlpha: 0.7, ease: Power0.easeNone }, '-=1.4');
 
@@ -113,7 +114,7 @@ chao.init = () => {
   chao.greeting();
   chao.navigation();
   chao.carousel();
-  
+
   if ($(window).width() >= 1150) {
     // do some magic
     chao.parallax();

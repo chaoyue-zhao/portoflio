@@ -1,11 +1,16 @@
 .nav {
   &__nav {
-    @include position(fixed, 0, 0, 0, 85%);
+    @include position(absolute, 0, 0, 0, 85%);
     z-index: 100;
-    opacity: 0;
     background: $primary-color;
     width: 15vw;
+    opacity: 0;
     visibility: hidden;
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   
   &__list {
@@ -52,7 +57,7 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     top: 10%;
     right: 6%;
     z-index: 150;
@@ -77,18 +82,15 @@
     width: 100%;
     height: 100vh;
     background: rgba($black, 0.4);
-    visibility: hidden;
-    opacity: 0;
     transition: all .2s linear;
     z-index: 50;
-  }
-}
+    visibility: hidden;
+    opacity: 0;
 
-.open.nav{
-  &__nav,
-  &__overlay {
-    visibility: visible;
-    opacity: 1;
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 

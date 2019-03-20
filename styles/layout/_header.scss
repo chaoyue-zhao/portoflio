@@ -45,13 +45,23 @@
   }
 
   .scroll-hint {
-    font-size: 2.5rem;
     color: $white;
+    font-size: 10px;
     justify-self: center;
     align-self: end;
     display: inline-block;
     margin-bottom: 2rem;
     animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    position: relative;
+
+
+    &__icon {
+      font-size: 2.5rem;
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+    }
+
   }
 
   &__text-container,
