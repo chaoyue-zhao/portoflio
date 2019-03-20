@@ -2,8 +2,8 @@
   
   .bcg {
     background: $white;
-    position: relative;
     @include section-style;
+    padding-top: 2%;
     @include parallex-background;
 
     @include media(1150px) {
@@ -14,13 +14,6 @@
 
   &__title {
     text-align: center;
-    position: absolute;
-    top: -5px;
-    left: 40%;
-
-    @include media(1150px) {
-      position: static;
-    }
   }
 
   &__content {
@@ -29,6 +22,7 @@
     justify-content: flex-end;
     padding: 2%;
     position: relative;
+    top: -35px;
     background: $white;
 
     @include media(1150px) {
@@ -75,62 +69,25 @@
   .bcg {
     background: $white;
     @include section-style;
-    padding-top: 2%;
-    display: grid; 
-    grid-template-columns: 20px 1fr 20px;
-    align-content: start;
+    padding-top: 0;
     @include parallex-background;
-
-    @include media (1150px) {
-      padding-top: 8%;
-    }
   }
 
-  .wrapper {
-    grid-column: 1 / -1;
-    display: grid; 
-    width: 100%;
-    grid-gap: $tiny-gap;
-    grid-template-columns: $tiny-gap repeat(3, calc(75vw - 40px)) $tiny-gap;
-    padding: 0 $small-gap 0 0;
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    transform: translateY(-20%);
-
-    @include media(1150px) {
-      display: block;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-    }
-  }
-
-  &__title {
-    position: relative;
-    top: -10px;
-
-    @include media (1150px) {
-      top: 0;
-    }
-  }
 }
 
 .blog {
   
   .bcg {
     @include section-style;
-    padding-top: 10%;
     background: $white;
-    overflow: visible;
+    padding-top: 2%;
   }
   
-  .wrapper { 
+  &__content { 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: $medium-gap;
-    position: relative;
+    transform: translateY(-6%);
   }
 
   &__item {
@@ -138,15 +95,7 @@
   }
 
   &__title {
-    position: absolute;
-    right: 0;
-    top: -8rem;
-
-    @include media (1150px) {
-      top: 0;
-      position: static;
-      text-align: center;
-    }
+    text-align: right; 
   }
 
   &__image-container {
@@ -170,7 +119,7 @@
   &__text-container{
     padding: $small-gap $tiny-gap;
     background: $primary-color;
-    height: 38vh;
+    height: 40vh;
     transition: all .2s linear;
     @include vertical-flex-center;
     text-align: center;
@@ -196,11 +145,8 @@
   }
 
   &__title {
-   margin-left: 13.5rem;
-
-   @include media (1150px) {
-     margin-left: 0;
-   }
+   text-align: center;
+   padding-right: 15rem;
   }
 
   &__form {

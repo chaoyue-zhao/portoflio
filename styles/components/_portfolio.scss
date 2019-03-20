@@ -1,24 +1,21 @@
 .portfolio {
+  &__title {
+    position: relative;
+    top: 6%;
+    left: 2%;
+  }
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: $medium-gap;
-
-    &:first-of-type,
-    &:last-of-type {
-      background: $grey;
-    }
- 
-    &:nth-of-type(2) {
-      background: $primary-color;
-    }
+    width: 100%;
+    height: auto;
   }
 
   &__image-container {
+    width: 42%;
     height: 60%;
-    width: 45%;
     margin-right: $big-gap;
   }
   
@@ -30,32 +27,24 @@
 
   &__text-container {
     background: $primary-color;
-    width: 45%;
+    width: 40%;
     height: 100%;
+    margin-left: $big-gap;
     padding: $small-gap $medium-gap; 
     @include box-shadow;
     order: -1;
     position: relative;
+    @include vertical-flex-left;
   }
 
   &__project-title, 
-  &__description, {
-    margin-bottom: $small-gap;
-  }
-
-  &__icon-container {
-    margin-bottom: $medium-gap;
-  }
-  
-  &__icon {
-
-    &:nth-child(4) {
-      margin-right: 5rem;
-    }
+  &__description,
+  &__icon-container,
+  &__button {
+    margin: $small-gap 0;
   }
 
   &__button {
-    margin-bottom: $small-gap;
 
     &:first-child {
       margin-right: $small-gap;
@@ -65,7 +54,7 @@
 
 .dev-icon, 
 .dev-svg {
-  margin-right: 1.8rem;
+  margin-right: 1.5rem;
 }
 
 .dev-icon {
@@ -77,3 +66,39 @@
   fill: $white; 
   width: 1.9em;
 }
+
+.flickity {
+
+  &-prev-next-button {
+
+    background: $white;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    
+    &:hover, 
+    &:focus {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  &-page-dots {
+    bottom: -50px;
+  }
+
+  &-page-dots .dot {
+    height: 10px;
+    width: 100px;
+    margin: 0;
+    border-radius: 0;
+    background: $primary-color;
+  }
+
+  &-enabled:focus .flickity-viewport {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+
+

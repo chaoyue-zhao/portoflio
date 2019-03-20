@@ -22,6 +22,13 @@ chao.navigation = () => {
   })
 }
 
+chao.carousel = () => {
+  $('.main-carousel').flickity({
+    cellAlign: 'left',
+    contain: true
+  });
+}
+
 chao.parallax = () => {
 
   /**************************************************************
@@ -105,8 +112,9 @@ chao.parallax = () => {
 chao.init = () => {
   chao.greeting();
   chao.navigation();
+  chao.carousel();
   
-  if ($(window).width() >= 1050) {
+  if ($(window).width() >= 1150) {
     // do some magic
     chao.parallax();
   }

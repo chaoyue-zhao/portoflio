@@ -27,23 +27,39 @@
 
   &.slideInUp2 {
     transition-delay: 0.2s;
+
+    @include media (1150px) {
+      transition-delay: 0;
+    }
   }
 
   &.slideInUp3 {
     transition-delay: 0.4s;
+
+    @include media (1150px) {
+      transition-delay: 0;
+    }
   }
 
   &.slideInUp4 {
     transition-delay: 0.6s;
+
+    @include media (1150px) {
+      transition-delay: 0;
+    }
   }
 
   &.slideInUp5 {
     transition-delay: 0.8s;
+
+    @include media (1150px) {
+      transition-delay: 0;
+    }
   }
 }
 
 .content-block {
-  height: 40vh;
+  height: 50vh;
   background: $primary-color;
   z-index: 30;
 }

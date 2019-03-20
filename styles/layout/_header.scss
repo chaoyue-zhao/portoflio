@@ -2,7 +2,7 @@
   .bcg {
     background: url(../assets/hero-img.png) no-repeat;
     @include parallex-background;
-    z-index: 10;
+    z-index: 15;
   }
   
   .wrapper {
