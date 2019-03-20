@@ -9,7 +9,7 @@
     @include vertical-flex-left;
 
     @include media (1150px) {
-      color: $white;
+      
     }
 
     &:focus {
@@ -34,6 +34,8 @@
 
     @include media (1150px) {
       color: $white;
+      text-align: left;
+      margin-left: $small-gap;
     }
   }
 
@@ -48,6 +50,10 @@
     background: transparent;
     border: none;
     margin-left: 10%;
+
+    @include media (1150px) {
+      margin-left: 0;
+    }
   } 
 
   &__paragraph,

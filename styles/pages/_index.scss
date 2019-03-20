@@ -7,13 +7,14 @@
     @include parallex-background;
 
     @include media(1150px) {
-      padding: 0;
-      height: 100vh;
+      padding: $small-gap 0 $big-gap 0;
+      height: auto;
     }
   }
 
   &__title {
     text-align: center;
+    padding: $small-gap;
   }
 
   &__content {
@@ -27,6 +28,7 @@
 
     @include media(1150px) {
       @include vertical-flex-center;
+      position: static;
     }
   }
 
@@ -40,7 +42,8 @@
     @include box-shadow;
     
     @include media(1150px) {
-      width: 60%;
+      width: 50%;
+      height: 60vh;
       margin: 0 auto;
       top: 0;
       left: 0;
@@ -71,6 +74,12 @@
     @include section-style;
     padding-top: 0;
     @include parallex-background;
+
+    @include media (1150px) {
+      height: auto;
+      background: $primary-color;
+      padding: 0 0 $medium-gap 0;
+    }
   }
 
 }
@@ -81,6 +90,10 @@
     @include section-style;
     background: $white;
     padding-top: 2%;
+
+    @include media (1150px) {
+      height: auto;
+    }
   }
   
   &__content { 
@@ -88,6 +101,10 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: $medium-gap;
     transform: translateY(-6%);
+
+    @include media (1150px) {
+      transform: translate(0);
+    }
   }
 
   &__item {
@@ -96,6 +113,11 @@
 
   &__title {
     text-align: right; 
+    
+    @include media (1150px) {
+      text-align: center;
+      padding: $small-gap;
+    }
   }
 
   &__image-container {
@@ -141,12 +163,25 @@
     @include media (1150px) {
       background-size: cover;
       background-position: center;
+      height: auto;
+      padding: $medium-gap;
     }
   }
 
   &__title {
    text-align: center;
    padding-right: 15rem;
+
+   @include media(1150px) {
+     padding: 0 0 $tiny-gap 0;
+   }
+   
+   .heading-title {
+
+     @include media (1150px) {
+       color: $white;
+     }
+   }
   }
 
   &__form {
@@ -156,6 +191,7 @@
     @include media (1150px) {
       width: 80%;
       margin: 0 auto;
+      text-align: center;
     }
   }
 }

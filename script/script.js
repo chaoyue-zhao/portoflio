@@ -26,7 +26,8 @@ chao.navigation = () => {
 chao.carousel = () => {
   $('.main-carousel').flickity({
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    watchCSS: true
   });
 }
 

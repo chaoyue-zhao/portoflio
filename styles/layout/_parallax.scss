@@ -62,4 +62,8 @@
   height: 50vh;
   background: $primary-color;
   z-index: 30;
+  
+  @include media (1150px) {
+    display: none;
+  }
 }

@@ -13,9 +13,11 @@
   border-radius: 5px;
   padding: $tiny-gap $medium-gap;
   position: relative;
+  display: inline-block;
   z-index: 10;
   transition: color 0.3s;
   cursor: pointer;
+
   @include box-shadow;
 
   &:hover, &:focus {

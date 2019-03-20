@@ -1,9 +1,17 @@
 .portfolio {
+
   &__title {
     position: relative;
     top: 6%;
     left: 2%;
-  }
+
+    @include media (1150px) {
+      position: static;
+      padding: $small-gap 0;
+      color: $white;
+      text-align: center;
+    }
+  } 
 
   &__content {
     display: flex;
@@ -11,12 +19,33 @@
     align-items: center;
     width: 100%;
     height: auto;
+
+    @include media (1150px) {
+      @include vertical-flex-center;
+      margin-bottom: $big-gap;
+    }
+
+    &::after {
+      content: "flickity";
+      display: none;
+
+      @include media (1150px) {
+        content: "";
+      }
+    }
   }
 
   &__image-container {
     width: 42%;
     height: 60%;
     margin-right: $big-gap;
+
+    @include media (1150px) {
+      height: auto;
+      width: 100%;
+      margin: $small-gap 0;
+      order: -1;
+    }
   }
   
   &__image {
@@ -35,6 +64,14 @@
     order: -1;
     position: relative;
     @include vertical-flex-left;
+
+    @include media (1150px) {
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: $tiny-gap $small-gap;
+      border: 2px solid $white;
+    }
   }
 
   &__project-title, 
@@ -55,16 +92,28 @@
 .dev-icon, 
 .dev-svg {
   margin-right: 1.5rem;
+
+  @include media (1150px) {
+    margin-right: 0.8rem;
+  }
 }
 
 .dev-icon {
   color: $white;
   font-size: 1.9rem;
+
+  @include media (1150px) {
+    font-size: 1.6rem;
+  }
 }
 
 .dev-svg {
   fill: $white; 
   width: 1.9em;
+
+  @include media (1150px) {
+    width: 1.6rem;
+  }
 }
 
 .flickity {
@@ -98,6 +147,7 @@
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
   }
+
 }
 
 

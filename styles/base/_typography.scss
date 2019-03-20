@@ -53,6 +53,11 @@ body {
     letter-spacing: 5px;
     color: $primary-color;
 
+    @include media(1150px) {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+    }
+
     &--accent {
       color: $white;
     }

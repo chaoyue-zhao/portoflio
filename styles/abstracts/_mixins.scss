@@ -54,7 +54,6 @@
   box-shadow: 10px 20px 50px 6px rgba(23, 23 ,23, 0.2);
 }
 
-
 @mixin hover($color) {
   &:hover, &:focus {
     color: $color;
@@ -74,4 +73,9 @@
   width: 100%;
   height: 100%;
   z-index: 10;
+
+  @include media(1150px) {
+    position: static;
+    height: auto;
+  }
 }
