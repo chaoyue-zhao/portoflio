@@ -1,5 +1,4 @@
 .about {
-  
   .bcg {
     background: $white;
     @include section-style;
@@ -40,7 +39,7 @@
     top: -50px;
     left: -50px;
     @include box-shadow;
-    
+
     @include media(1150px) {
       width: 50%;
       height: 300px;
@@ -81,7 +80,7 @@
     @include media(870px) {
       width: 90%;
     }
-    
+
     @include media(500px) {
       width: 95%;
     }
@@ -89,41 +88,39 @@
 }
 
 .portfolio {
-  
   .bcg {
     background: $white;
     @include section-style;
     padding-top: 0;
     @include parallex-background;
 
-    @include media (1150px) {
+    @include media(1150px) {
       height: auto;
       background: $primary-color;
       padding: 0 0 $medium-gap 0;
     }
   }
-
 }
 
 .blog {
-  
   .bcg {
     @include section-style;
     background: $white;
     padding-top: 2%;
 
-    @include media (1150px) {
+    @include media(1150px) {
       height: auto;
+      padding: 0 0 $medium-gap 0;
     }
   }
-  
-  &__content { 
+
+  &__content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: $medium-gap;
     transform: translateY(-6%);
 
-    @include media (1150px) {
+    @include media(1150px) {
       transform: translate(0);
     }
   }
@@ -133,9 +130,9 @@
   }
 
   &__title {
-    text-align: right; 
-    
-    @include media (1150px) {
+    text-align: right;
+
+    @include media(1150px) {
       text-align: center;
       padding: $small-gap;
     }
@@ -152,18 +149,18 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 
     &:hover {
       transform: scale(1.2);
     }
   }
 
-  &__text-container{
+  &__text-container {
     padding: $small-gap $tiny-gap;
     background: $primary-color;
     height: 40vh;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     @include vertical-flex-center;
     text-align: center;
   }
@@ -181,38 +178,49 @@
     background-size: 50%;
     background-position: left bottom;
 
-    @include media (1150px) {
+    @include media(1150px) {
       background-size: cover;
       background-position: center;
       height: auto;
-      padding: $medium-gap;
+      padding: 0 0 $medium-gap 0;
     }
   }
 
   &__title {
-   text-align: center;
-   padding-right: 15rem;
+    text-align: center;
+    padding-right: 15rem;
 
-   @include media(1150px) {
-     padding: 0 0 $tiny-gap 0;
-   }
-   
-   .heading-title {
+    @include media(1150px) {
+      padding: $small-gap;
+    }
 
-     @include media (1150px) {
-       color: $white;
-     }
-   }
+    @include media(590px) {
+      font-size: 3.6rem;
+    }
+
+    .heading-title {
+      @include media(1150px) {
+        color: $white;
+      }
+
+      @include media(590px) {
+        display: none;
+      }
+    }
   }
 
   &__form {
     width: 45%;
     margin-left: 50vw;
 
-    @include media (1150px) {
+    @include media(1150px) {
       width: 80%;
       margin: 0 auto;
       text-align: center;
+    }
+
+    @include media(670px) {
+      width: 100%;
     }
   }
 }

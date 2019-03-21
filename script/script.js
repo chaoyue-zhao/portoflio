@@ -10,7 +10,7 @@ chao.greeting = () => {
     document.querySelector('.greeting').innerHTML = 'Afternoon';
   } else if (time >=17 && time <= 22) {
     document.querySelector('.greeting').innerHTML = 'Evening';
-  } else if ((time >=22 && time <= 24) || time < 4){
+  } else if ((time >=22 && time <= 24) || (time < 4 )){
     document.querySelector('.greeting').innerHTML = 'Night';
   }
 };

@@ -20,6 +20,14 @@
       color: $white;
       text-align: center;
     }
+
+    @include media (530px) {
+      font-size: 4rem;
+    }
+
+    @include media (450px) {
+      font-size: 3.5rem;
+    }
   } 
 
   &__content {
@@ -85,6 +93,10 @@
 
     &:first-child {
       margin-right: $small-gap;
+    }
+
+    @include media (450px) {
+      margin: $small-gap 25%;
     }
   }
 }

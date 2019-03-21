@@ -7,12 +7,25 @@
     width: 70%;
     margin: 0 auto;
     padding: $medium-gap 0 $small-gap 0;
+
+    @include media (770px) {
+      width: 90%;
+      padding-bottom: $tiny-gap;
+    }
+
+    @include media (360px) {
+      padding: $small-gap 0 0 0;
+    }
   }
 
   &__icon {
     color: $primary-color;
     font-size: 2rem;
     transition: all .2s linear;
+
+    @include media (770px) {
+      font-size: 1.5rem;
+    }
 
       &:hover {
         animation: jello-horizontal 0.9s both;
@@ -22,10 +35,19 @@
   &__toronto {
     margin-top: 10px;
     width: 1rem;
+
+    @include media (770px) {
+      width: 10px;
+    }
   }
 
   &__paragraph {
     text-align: center;
+    font-size: 0.8rem;
+
+    @include media (360px) {
+      font-size: 0.5rem;
+    }
 
     &:last-child {
       padding-bottom: $small-gap;
