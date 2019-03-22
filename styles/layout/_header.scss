@@ -28,6 +28,14 @@
     width: 3rem; 
     justify-self: flex-start;
     transform: translateY(4rem);
+
+    @include media (1200px) {
+      margin-left: 1rem;
+    }
+
+    @include media (870px) {
+      margin-left: 2rem;
+    }
   }
 
   &__tagline {

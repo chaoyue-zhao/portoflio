@@ -1,6 +1,8 @@
 .nav {
   &__nav {
-    @include position(absolute, 0, 0, 0, 85%);
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: 100;
     background: $primary-color;
     width: 15vw;
@@ -10,6 +12,22 @@
     &.open {
       visibility: visible;
       opacity: 1;
+    }
+
+    @include media (1100px){
+      width: 20vw;
+    }
+
+    @include media (870px) {
+      width: 25vw;
+    }
+
+    @include media (500px ){
+      width: 35vw;
+    }
+
+    @include media (420px) {
+      width: 40vw;
     }
   }
   
@@ -28,6 +46,14 @@
     text-decoration: none;
     position: relative;
     display: inline-block;
+
+    @include media (650px) {
+      font-size: 1rem;
+    }
+
+    @include media (420px) {
+      font-size: 0.9rem;
+    }
 
     &:hover::before,
     &:focus::before {
@@ -74,6 +100,14 @@
     &::before {
       transform: rotate(90deg);
       transition: all .2s linear;
+    }
+
+    @include media (1100px) {
+      right: 8%;
+    }
+
+    @include media (870px) {
+      right: 10%;
     }
   }
 

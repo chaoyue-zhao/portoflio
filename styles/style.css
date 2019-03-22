@@ -524,6 +524,13 @@ body {
           box-shadow: 10px 20px 50px 6px rgba(23, 23, 23, 0.2);
 }
 
+@media (max-width: 450px) {
+  .button {
+    padding: 10px 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 .button:hover, .button:focus {
   background: #16524c;
   color: #f8f8f8;
@@ -766,10 +773,8 @@ body {
 
 .nav__nav {
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  left: 85%;
+  top: 0;
   z-index: 100;
   background: #16524c;
   width: 15vw;
@@ -780,6 +785,30 @@ body {
 .nav__nav.open {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 1100px) {
+  .nav__nav {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 870px) {
+  .nav__nav {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav__nav {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav__nav {
+    width: 40vw;
+  }
 }
 
 .nav__list {
@@ -807,6 +836,18 @@ body {
   text-decoration: none;
   position: relative;
   display: inline-block;
+}
+
+@media (max-width: 650px) {
+  .nav__link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav__link {
+    font-size: 0.9rem;
+  }
 }
 
 .nav__link:hover::before, .nav__link:focus::before {
@@ -865,6 +906,18 @@ body {
           transform: rotate(90deg);
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
+}
+
+@media (max-width: 1100px) {
+  .nav__button {
+    right: 8%;
+  }
+}
+
+@media (max-width: 870px) {
+  .nav__button {
+    right: 10%;
+  }
 }
 
 .nav__overlay {
@@ -927,7 +980,7 @@ body {
 
 @media (max-width: 450px) {
   .portfolio__title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -1029,14 +1082,14 @@ body {
   margin: 1rem 0;
 }
 
-.portfolio__button:first-child {
-  margin-right: 1rem;
+@media (max-width: 400px) {
+  .portfolio__project-title {
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 450px) {
-  .portfolio__button {
-    margin: 1rem 25%;
-  }
+.portfolio__button:first-child {
+  margin-right: 1rem;
 }
 
 .dev-icon,
@@ -1224,6 +1277,18 @@ body {
   justify-self: flex-start;
   -webkit-transform: translateY(4rem);
           transform: translateY(4rem);
+}
+
+@media (max-width: 1200px) {
+  .header__logo {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .header__logo {
+    margin-left: 2rem;
+  }
 }
 
 .header__tagline {
@@ -1621,6 +1686,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media (max-width: 610px) {
+  .blog__blog-title {
+    font-size: 1.2rem;
+  }
 }
 
 .blog__paragraph, .blog__button {

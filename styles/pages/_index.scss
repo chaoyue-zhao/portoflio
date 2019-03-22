@@ -164,6 +164,13 @@
     @include vertical-flex-center;
     text-align: center;
   }
+  
+  &__blog-title {
+
+    @include media (610px) {
+      font-size: 1.2rem;
+    }
+  }
 
   &__paragraph,
   &__button {

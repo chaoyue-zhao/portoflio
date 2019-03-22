@@ -26,7 +26,7 @@
     }
 
     @include media (450px) {
-      font-size: 3.5rem;
+      font-size: 3.2rem;
     }
   } 
 
@@ -89,14 +89,17 @@
     margin: $small-gap 0;
   }
 
+  &__project-title {
+
+    @include media (400px) {
+      font-size: 1.5rem;
+    }
+  }
+
   &__button {
 
     &:first-child {
       margin-right: $small-gap;
-    }
-
-    @include media (450px) {
-      margin: $small-gap 25%;
     }
   }
 }
