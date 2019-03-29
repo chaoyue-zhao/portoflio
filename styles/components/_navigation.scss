@@ -5,17 +5,13 @@
     top: 0;
     z-index: 100;
     background: $primary-color;
-    width: 15vw;
+    width: 16vw;
     opacity: 0;
     visibility: hidden;
 
     &.open {
       visibility: visible;
       opacity: 1;
-    }
-
-    @include media (1100px){
-      width: 20vw;
     }
 
     @include media (870px) {
@@ -86,7 +82,7 @@
     position: absolute;
     top: 4rem;
     right: 10%;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     z-index: 150;
 
     &::before,
@@ -103,12 +99,16 @@
       transition: all .2s linear;
     }
 
-    @include media (1100px) {
-      right: 8%;
+    @include media (870px) {
+      right: 15%;
     }
 
-    @include media (870px) {
-      right: 10%;
+    @include media (500px ){
+      right: 23%;
+    }
+
+    @include media (420px) {
+      right: 28%;
     }
   }
 
