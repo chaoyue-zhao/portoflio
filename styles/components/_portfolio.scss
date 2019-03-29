@@ -1,14 +1,5 @@
 .portfolio {
 
-  .main-carousel::after {
-    content: "flickity";
-    display: none;
-
-    @include media (1150px) {
-      content: "";
-    }
-  }
-
   &__title {
     position: relative;
     top: 6%;
@@ -74,6 +65,7 @@
     @include vertical-flex-left;
 
     @include media (1150px) {
+      @include vertical-flex-center;
       height: auto;
       width: 100%;
       margin: 0;
@@ -87,11 +79,15 @@
   &__icon-container,
   &__button {
     margin: $small-gap 0;
+
+    @include media (1150px) {
+      text-align: center;
+    }
   }
 
   &__project-title {
 
-    @include media (400px) {
+    @include media (1170px) {
       font-size: 1.5rem;
     }
   }
@@ -101,12 +97,20 @@
     &:first-child {
       margin-right: $small-gap;
     }
+
+    @include media (1330px) {
+      padding: $tiny-gap $small-gap;
+    }
   }
 }
 
 .dev-icon, 
 .dev-svg {
   margin-right: 1.5rem;
+
+  @include media (1330px) {
+    margin-right: 1rem;
+  }
 
   @include media (1150px) {
     margin-right: 0.8rem;
@@ -117,6 +121,10 @@
   color: $white;
   font-size: 1.9rem;
 
+  @include media (1330px) {
+    font-size: 1.8rem;
+  }
+
   @include media (1150px) {
     font-size: 1.6rem;
   }
@@ -126,44 +134,11 @@
   fill: $white; 
   width: 1.9em;
 
+  @include media (1330px) {
+    width: 1.8rem;
+  }
+
   @include media (1150px) {
     width: 1.6rem;
   }
 }
-
-.flickity {
-
-  &-prev-next-button {
-
-    background: $white;
-    color: $primary-color;
-    border: 2px solid $primary-color;
-    
-    &:hover, 
-    &:focus {
-      background: $primary-color;
-      color: $white;
-    }
-  }
-
-  &-page-dots {
-    bottom: -50px;
-  }
-
-  &-page-dots .dot {
-    height: 10px;
-    width: 100px;
-    margin: 0;
-    border-radius: 0;
-    background: $primary-color;
-  }
-
-  &-enabled:focus .flickity-viewport {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-  }
-
-}
-
-
-

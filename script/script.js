@@ -27,7 +27,8 @@ chao.carousel = () => {
   $('.main-carousel').flickity({
     cellAlign: 'left',
     contain: true,
-    watchCSS: true
+    watchCSS: true,
+    groupCells: true
   });
 }
 

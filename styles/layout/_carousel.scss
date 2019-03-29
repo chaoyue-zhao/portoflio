@@ -1,0 +1,42 @@
+.main-carousel::after {
+  content: "flickity";
+  display: none;
+
+  @include media (1150px) {
+    content: "";
+  }
+}
+
+.flickity {
+
+  &-prev-next-button {
+
+    background: $white;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    
+    &:hover, 
+    &:focus {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  &-page-dots {
+    bottom: -50px;
+  }
+
+  &-page-dots .dot {
+    height: 10px;
+    width: 100px;
+    margin: 0;
+    border-radius: 0;
+    background: $primary-color;
+  }
+
+  &-enabled:focus .flickity-viewport {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+}

@@ -14,6 +14,10 @@
   &__title {
     text-align: center;
     padding: $small-gap;
+
+    @include media (1280px) {
+      padding: $tiny-gap;
+    }
   }
 
   &__content {
@@ -32,8 +36,8 @@
   }
 
   &__image-container {
-    width: 35%;
-    height: 400px;
+    width: 30%;
+    height: 300px;
     order: -1;
     position: relative;
     top: -50px;
@@ -42,7 +46,6 @@
 
     @include media(1150px) {
       width: 50%;
-      height: 300px;
       margin: 0 auto;
       top: 0;
       left: 0;
@@ -67,13 +70,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } 
 
   &__text-container {
-    width: 65%;
+     width: 80%;
 
     @include media(1150px) {
-      width: 80%;
       text-align: center;
     }
 
@@ -83,6 +85,15 @@
 
     @include media(500px) {
       width: 95%;
+    }
+  }
+
+  &__resume {
+    display: inline-block;
+    margin-top: $tiny-gap;
+
+    @include media (1150px) {
+      margin: $small-gap 0;
     }
   }
 }
@@ -115,9 +126,7 @@
   }
 
   &__content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: $medium-gap;
+    padding: 0 $big-gap;
     transform: translateY(-6%);
 
     @include media(1150px) {
@@ -126,7 +135,8 @@
   }
 
   &__item {
-    @include box-shadow;
+    margin: 0 $small-gap;
+    width: 300px;
   }
 
   &__title {
@@ -166,7 +176,6 @@
   }
   
   &__blog-title {
-
     @include media (610px) {
       font-size: 1.2rem;
     }
@@ -182,7 +191,7 @@
   .bcg {
     background: url(../assets/contact-img.png) no-repeat;
     @include parallex-background;
-    background-size: 50%;
+    background-size: 50% 100%;
     background-position: left bottom;
 
     @include media(1150px) {
@@ -195,7 +204,7 @@
 
   &__title {
     text-align: center;
-    padding-right: 15rem;
+    padding: $small-gap 15rem $small-gap 0;
 
     @include media(1150px) {
       padding: $small-gap;
@@ -219,6 +228,7 @@
   &__form {
     width: 45%;
     margin-left: 50vw;
+    margin-top: $small-gap;
 
     @include media(1150px) {
       width: 80%;
