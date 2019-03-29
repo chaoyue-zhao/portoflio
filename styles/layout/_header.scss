@@ -3,6 +3,7 @@
     background: url(../assets/hero-img.png) no-repeat;
     @include parallex-background;
     z-index: 15;
+    padding: $big-gap 0;
   }
   
   .wrapper {
@@ -27,7 +28,7 @@
     display: block;
     width: 3rem; 
     justify-self: flex-start;
-    transform: translateY(4rem);
+    align-self: flex-start;
 
     @include media (1200px) {
       margin-left: 1rem;
@@ -58,7 +59,7 @@
     justify-self: center;
     align-self: end;
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 100px;
     text-decoration: none;
     position: relative;
 

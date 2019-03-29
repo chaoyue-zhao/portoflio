@@ -762,6 +762,71 @@ body {
   left: -55px;
 }
 
+#preloader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #16524c;
+  z-index: 500;
+}
+
+#preloader .txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#preloader .txt-perc {
+  font-size: 5rem;
+  color: #f8f8f8;
+  font-family: "Vidaloka", serif;
+  opacity: 1;
+}
+
+#preloader .progress {
+  width: 250px;
+  height: 5px;
+  background: rgba(248, 248, 248, 0.3);
+  margin: 0 auto;
+}
+
+#preloader .progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: rgba(248, 248, 248, 0.9);
+}
+
+#preloader.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header .bcg {
+  -webkit-transition: -webkit-transform 4s ease-out;
+  transition: -webkit-transform 4s ease-out;
+  transition: transform 4s ease-out;
+  transition: transform 4s ease-out, -webkit-transform 4s ease-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.header.is-loaded .bcg {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.is-loading {
+  overflow: hidden;
+}
+
 .nav__nav {
   position: absolute;
   right: 0;
@@ -877,8 +942,10 @@ body {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 10%;
-  right: 6%;
+  top: 4rem;
+  right: 10%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   z-index: 150;
 }
 
@@ -1271,6 +1338,7 @@ body {
   height: 100%;
   z-index: 10;
   z-index: 15;
+  padding: 4rem 0;
 }
 
 @media (max-width: 1150px) {
@@ -1310,8 +1378,8 @@ body {
   display: block;
   width: 3rem;
   justify-self: flex-start;
-  -webkit-transform: translateY(4rem);
-          transform: translateY(4rem);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 @media (max-width: 1200px) {
@@ -1349,7 +1417,7 @@ body {
       -ms-grid-row-align: end;
       align-self: end;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 100px;
   text-decoration: none;
   position: relative;
 }

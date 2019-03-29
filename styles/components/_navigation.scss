@@ -84,8 +84,9 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 10%;
-    right: 6%;
+    top: 4rem;
+    right: 10%;
+    transform: translateX(-100%);
     z-index: 150;
 
     &::before,

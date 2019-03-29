@@ -30,8 +30,14 @@
     <link rel="stylesheet" href="styles/style.css" />
     <title>Chaoyue Zhao // Front-End Web Developer // Toronto</title>
   </head>
-  <body>
+  <body class="is-loading">
     <noscript>You need to enable JavaScript to see the full beauty of this website.</noscript>
+    <div id="preloader">
+      <div class="txt">
+        <p class="txt-perc">0%</p>
+        <div class="progress"><span></span></div>
+      </div>
+    </div>
     <header class="header fs" id="intro">
       <div class="bcg">
         <div class="wrapper">
@@ -621,6 +627,7 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
     <script src="script/script.js"></script>
