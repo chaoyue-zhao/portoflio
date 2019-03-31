@@ -131,12 +131,22 @@
 
     @include media(1150px) {
       transform: translate(0);
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-gap: $medium-gap;
+      padding: 0;
     }
   }
 
   &__item {
     margin: 0 $small-gap;
     width: 300px;
+
+    @include media (1150px) {
+      margin: 0 auto;
+      width: auto;
+    }
   }
 
   &__title {
@@ -173,6 +183,10 @@
     transition: all 0.2s linear;
     @include vertical-flex-center;
     text-align: center;
+
+    @include media (1150px) {
+      padding: 0;
+    }
   }
   
   &__blog-title {

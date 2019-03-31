@@ -1,6 +1,9 @@
 .form {
-
+  
   &__input {
+    font-family: $body-font;
+    font-size: 1rem;
+    color: $black;
     border: none;
     border: 2px solid $primary-color;
     background: $white;
@@ -53,12 +56,12 @@
 
     @include media (1150px) {
       margin-left: 0;
+      margin-top: $small-gap;
     }
   } 
 
   &__paragraph,
-  &__button, 
-  textarea {
+  &__button {
     margin-bottom: $medium-gap;
 
     @include media (1150px) {
