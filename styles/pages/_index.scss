@@ -133,7 +133,7 @@
       transform: translate(0);
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
       grid-gap: $medium-gap;
       padding: 0;
     }
@@ -145,7 +145,7 @@
 
     @include media (1150px) {
       margin: 0 auto;
-      width: auto;
+      width: 350px;
     }
   }
 
@@ -183,10 +183,6 @@
     transition: all 0.2s linear;
     @include vertical-flex-center;
     text-align: center;
-
-    @include media (1150px) {
-      padding: 0;
-    }
   }
   
   &__blog-title {
