@@ -1764,8 +1764,8 @@ body {
     padding: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2rem;
     padding: 0;
   }
@@ -1773,13 +1773,19 @@ body {
 
 .blog__item {
   margin: 0 1rem;
-  width: 300px;
+  width: calc(50% - 2rem);
 }
 
 @media (max-width: 1150px) {
   .blog__item {
-    margin: 0 auto;
     width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .blog__item {
+    width: 300px;
   }
 }
 
