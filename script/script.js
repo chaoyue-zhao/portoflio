@@ -1,7 +1,7 @@
 const chao = {};
 
 chao.greeting = () => {
-  const date = new Date
+  const date = new Date;
   const time = date.getHours();
 
   if (time >= 5 && time <= 11){
@@ -10,7 +10,7 @@ chao.greeting = () => {
     document.querySelector('.greeting').innerHTML = 'Afternoon';
   } else if (time >=17 && time <= 22) {
     document.querySelector('.greeting').innerHTML = 'Evening';
-  } else if ((time >=22 && time <= 24) || (time < 4 )){
+  } else if ((time >=22 && time <= 24) || (time <= 4 )){
     document.querySelector('.greeting').innerHTML = 'Night';
   }
 };
@@ -106,7 +106,7 @@ chao.parallax = () => {
    THIS LOVELY BLOGPOST ON PARALLEX FROM PETR TICHY SAVED MY LIFE
    CREDIT HERE: https://t.co/CwcyHXK1g5?amp=1
    **************************************************************/
-  
+
   // Init ScrollMagic
   let controller = new ScrollMagic.Controller();
 
