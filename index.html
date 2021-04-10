@@ -1,707 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      href="assets/logo-black.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans:300,500i|Vidaloka"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Chaoyue Zhao // Front-End Web Developer // Toronto</title>
-  </head>
-  <body class="is-loading">
-    <noscript>You need to enable JavaScript to see the full beauty of this website.</noscript>
-    <div id="preloader">
-      <div class="txt">
-        <p class="txt-perc">0%</p>
-        <div class="progress"><span></span></div>
-      </div>
-    </div>
-    <header class="header fs" id="intro">
-      <div class="bcg">
-        <div class="wrapper">
-          <div class="nav__overlay">&nbsp;</div>
-          <button
-            for="navigation"
-            class="nav__button"
-            aria-label="click for menu"
-            tabindex="0"
-          ></button>
-          <nav class="nav__nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#slide-1" class="nav__link links">
-                  About
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#slide-2" class="nav__link links">
-                  Portfolio
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#slide-3" class="nav__link links">
-                  Blog
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#slide-4" class="nav__link links">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <img src="assets/logo-white.png" alt="logo" class="header__logo" />
-          <div class="header__text-container">
-            <h1 class="header__title heading heading-primary">
-              <span class="greeting"></span><span class="width">I'm Chao</span>
-            </h1>
-            <h2 class="header__tagline heading heading-tertiary">
-              Front-End Web Developer
-              <span class="width">living in Toronto, Canada</span>
-            </h2>
-          </div>
-          <a href="#slide-1" class="scroll-hint">Scroll
-            <span class="scroll-hint__icon"></span>
-          </a>
-        </div>
-      </div>
-    </header>
-    <main id="main">
-      <section class="about fs slide" id="slide-1">
-        <div class="bcg">
-          <a href="#intro" class="links links__section links__section-top"
-            >Prev</a
-          >
-          <h2 class="about__title heading heading-title slideInUp slideInUp4">
-            About
-          </h2>
-          <div class="wrapper">
-            <div class="about__content">
-              <div class="about__text-container">
-                <h3 class="about__tagline heading heading-secondary slideInUp">I'm Chao</h3>
-                <p class="about__subtagline paragraph paragraph-title slideInUp slideInUp2">
-                  I believe computers are created to create.
-                </p>
-                <p class="about__paragraph paragraph slideInUp slideInUp3">
-                  Hey, I’m Chao (pronunciation ‘ciao’), a front end developer whose work is fuelled
-                  by creativity, curiosity and dedication. After creating user-centric experiences
-                  through my time as event planner, I now create those experiences digitally with
-                  technology. I am a firm believer that success of big ideas lies in the perfect
-                  execution of small details.
-                </p>
-                <a href="assets/ChaoyueZhaoResume.pdf" class="button about__resume">Resume</a>
-              </div>
-              <div class="about__image-container image slideInUp slideInUp2">
-                <img
-                  src="assets/chao.jpg"
-                  alt="headshot of Chao sitting in a grey armchair wearing a jean top photo credit Pam Lau"
-                  title="photo credit Pam Lau"
-                  class="about__image"
-                  />
-              </div>
-            </div>
-          </div>
-          <a href="#slide-2" class="links links__section links__section-bottom"
-            >Next</a
-          >
-        </div>
-      </section>
-      <section class="content-block" id="cb-1"></section>
-      <section class="portfolio fs slide" id="slide-2">
-        <div class="bcg">
-          <a href="#slide-1" class="links links__section links__section-top"
-            >Prev</a
-          >
-          <h2
-            class="portfolio__title heading heading-title slideInUp slideInUp5"
-          >
-            Portfolio
-          </h2>
-          <div class="wrapper main-carousel">
-            <div class="portfolio__content carousel-cell">
-              <div class="portfolio__image-container slideInUp slideInUp3">
-                <img
-                  src="assets/projects/mondrian.png"
-                  alt="screenshot of the Mondrian app"
-                  class="portfolio__image image"
-                />
-              </div>
-              <div class="portfolio__text-container slideInUp slideInUp2">
-                <h3
-                  class="portfolio__project-title heading heading-secondary heading-secondary--accent"
-                >
-                  Mondrian in Style
-                </h3>
-                <div class="portfolio__description paragraph paragraph--accent">
-                  A mighty jQuery app to generate your own Mondrian. Thanks to
-                  randomization and responsive browser styling, the
-                  possibilities are endless!
-                  <div class="portfolio__icon-container">
-                    <i
-                      class="portfolio__icon dev-icon devicon-html5-plain"
-                      title="HTML5"
-                      aria-label="HTML5"
-                    ></i>
-                    <i
-                      class="portfolio__icon dev-icon devicon-sass-original"
-                      title="SASS"
-                      aria-label="SASS"
-                    ></i>
-                    <i
-                      class="portfolio__icon dev-icon devicon-javascript-plain"
-                      title="Javascript"
-                      aria-label="Javascript"
-                    ></i>
-                    <i
-                      class="portfolio__icon dev-icon devicon-jquery-plain"
-                      title="jQuery"
-                      aria-label="jQuery"
-                    ></i>
-                    <img
-                      src="assets/dev/accessibility.svg"
-                      title="web accessibility"
-                      alt="web accessibility"
-                      class="portfolio__icon dev-svg"
-                    />
-                    <img
-                      src="assets/dev/responsive.svg"
-                      title="responsive design"
-                      alt="responsive design"
-                      class="portfolio__icon dev-svg"
-                    />
-                    <i
-                      class="portfolio__icon dev-icon devicon-github-plain"
-                      title="Github"
-                      aria-label="Github"
-                    ></i>
-                    <i
-                      class="portfolio__icon dev-icon devicon-visualstudio-plain"
-                      title="Visual Studio"
-                      aria-label="Visual Studio"
-                    ></i>
-                  </div>
-                  <div class="portfolio__button-container">
-                    <a
-                      href="https://chaoyue-zhao.github.io/mondrian-in-style/"
-                      class="button portfolio__button"
-                      >Visit</a
-                    >
-                    <a
-                      href="https://github.com/chaoyue-zhao/mondrian-in-style"
-                      class="button portfolio__button"
-                      >Code</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio__content carousel-cell">
-              <div class="portfolio__image-container">
-                <img src="assets/projects/treats.png" alt="screenshot of the Queen Street Hot Treat header" class="portfolio__image image" />
-              </div>
-              <div class="portfolio__text-container">
-                <h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">
-                  Queen Street Hot Treat
-                </h3>
-                <div class="portfolio__description paragraph paragraph--accent">
-                  A jQuery app using Yelp Fusion API to give you the best meal options when you are at HackerYou!
-                </div>
-                <div class="portfolio__icon-container">
-                  <i class="portfolio__icon dev-icon devicon-html5-plain" title="HTML5" aria-label="HTML5"></i>
-                  <i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
-                  <i class="portfolio__icon dev-icon devicon-jquery-plain" title="jQuery" aria-label="jQuery"></i>
-                  <img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg" />
-                  <img src="assets/dev/accessibility.svg" title="web accessibility" alt="web accessibility" class="portfolio__icon dev-svg" />
-                  <img src="assets/dev/responsive.svg" title="responsive design" alt="responsive design" class="portfolio__icon dev-svg" />
-                  <i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
-                  <i class="portfolio__icon dev-icon devicon-visualstudio-plain" title="Visual Studio" aria-label="Visual Studio"></i>
-                </div>
-                <div class="portfolio__button-container">
-                  <a href="https://chaoyue-zhao.github.io/queen-street-hot-treat/" class="button portfolio__button">Visit</a>
-                  <a href="https://github.com/chaoyue-zhao/queen-street-hot-treat" class="button portfolio__button">Code</a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio__content carousel-cell">
-              <div class="portfolio__image-container">
-                <img
-                  src="assets/projects/thoughts.png"
-                  alt="screenshot of the what'cha think'n app"
-                  class="portfolio__image image"
-                />
-              </div>
-              <div class="portfolio__text-container slideInUp sideInUp4">
-                <h3
-                  class="portfolio__project-title heading heading-secondary heading-secondary--accent"
-                >
-                  What'cha Think'n
-                </h3>
-                <div class="portfolio__description paragraph paragraph--accent">
-                  A React app to analyze the sentiment behind your thoughts.
-                  There may or may not a public thought board that you can see
-                  all the logged thoughts!
-                </div>
-                <div class="portfolio__icon-container">
-                  <i
-                    class="portfolio__icon dev-icon devicon-react-original"
-                    title="React"
-                    aria-label="React"
-                  ></i>
-                  <img
-                    src="assets/dev/styled-components.png"
-                    title="styled-components"
-                    alt="styled-components"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <img
-                    src="assets/dev/firebase.svg"
-                    title="firebase"
-                    alt="Firebasse"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <img
-                    src="assets/dev/api.svg"
-                    title="API"
-                    alt="API"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <img
-                    src="assets/dev/accessibility.svg"
-                    title="web accessibility"
-                    alt="web accessibility"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <img
-                    src="assets/dev/responsive.svg"
-                    title="responsive design"
-                    alt="responsive design"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <i
-                    class="portfolio__icon dev-icon devicon-github-plain"
-                    title="Github"
-                    aria-label="Github"
-                  ></i>
-                  <i
-                    class="portfolio__icon dev-icon devicon-visualstudio-plain"
-                    title="Visual Studio"
-                    aria-label="Visual Studio"
-                  ></i>
-                </div>
-                <div class="portfolio__button-container">
-                  <a
-                    href="https://what-cha-think-n.firebaseapp.com/"
-                    class="button portfolio__button"
-                    >Visit</a
-                  >
-                  <a
-                    href="https://github.com/chaoyue-zhao/whatcha-thinkin"
-                    class="button portfolio__button"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="portfolio__content carousel-cell">
-              <div class="portfolio__image-container">
-                <img
-                  src="assets/projects/memes.png"
-                  alt="screenshot of the Meme in a Giffy front page"
-                  class="portfolio__image image"
-                />
-              </div>
-              <div class="portfolio__text-container">
-                <h3
-                  class="portfolio__project-title heading heading-secondary heading-secondary--accent"
-                >
-                  Meme in a Giffy
-                </h3>
-                <div class="portfolio__description paragraph paragraph--accent">
-                  A React app that allows you to create memes with the largest
-                  GIFs collection on the web and vote for your favorites!
-                </div>
-                <div class="portfolio__icon-container">
-                  <i
-                    class="portfolio__icon dev-icon devicon-react-original"
-                    title="React"
-                    aria-label="React"
-                  ></i>
-                  <i
-                    class="portfolio__icon dev-icon devicon-sass-original"
-                    title="SASS"
-                    aria-label="SASS"
-                  ></i>
-                  <img
-                    src="assets/dev/firebase.svg"
-                    title="firebase"
-                    alt="Firebasse"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <img
-                    src="assets/dev/api.svg"
-                    title="API"
-                    alt="API"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <img
-                    src="assets/dev/accessibility.svg"
-                    title="web accessibility"
-                    alt="web accessibility"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <img
-                    src="assets/dev/responsive.svg"
-                    title="responsive design"
-                    alt="responsive design"
-                    class="portfolio__icon dev-svg"
-                  />
-                  <i
-                    class="portfolio__icon dev-icon devicon-github-plain"
-                    title="Github"
-                    aria-label="Github"
-                  ></i>
-                  <i
-                    class="portfolio__icon dev-icon devicon-visualstudio-plain"
-                    title="Visual Studio"
-                    aria-label="Visual Studio"
-                  ></i>
-                </div>
-                <div class="portfolio__button-container">
-                  <a
-                    href="https://meme-in-a-giffy.firebaseapp.com/"
-                    class="button portfolio__button"
-                    >Visit</a
-                  >
-                  <a
-                    href="https://github.com/chaoyue-zhao/meme-in-a-giffy"
-                    class="button portfolio__button"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#slide-3" class="links links__section links__section-bottom"
-            >Next</a
-          >
-        </div>
-      </section>
-      <section class="content-block" id="cb-2"></section>
-      <section class="blog fs slide" id="slide-3">
-        <div class="bcg">
-          <a
-            href="#slide-2"
-            class="links links__section links__section-top links__section-portfolio"
-            >Prev</a
-          >
-          <div class="wrapper">
-            <h2 class="blog__title heading heading-title slideInUp slideInUp4">
-              Blog
-            </h2>
-            <div class="blog__content main-carousel">
-              <div class="blog__item slideInUp carousel-cell">
-                <div class="blog__image-container">
-                  <img
-                    src="assets/blogs/blog1.jpg"
-                    alt="fruit sandwich on a blue ceramic plate"
-                    class="blog__image"
-                  />
-                </div>
-                <div class="blog__text-container">
-                  <h3
-                    class="blog__blog-title paragraph paragraph-title paragraph-title--accent"
-                  >
-                    Making Axios API Calls to Yelp Fusion inside React.js
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    Steps to import data with Yelp Fusion API into your React
-                    app.
-                  </p>
-                  <a
-                    href="https://medium.com/@chaoyue_zhao/how-to-make-axios-api-calls-with-yelp-fusion-inside-react-js-10755d8485c5"
-                    target="__blank"
-                    class="blog__button button"
-                    >Read</a
-                  >
-                </div>
-              </div>
-              <div class="blog__item slideInUp slideInUp2 carousel-cell">
-                <div class="blog__image-container">
-                  <img
-                    src="assets/blogs/blog2.jpeg"
-                    alt="street view of a residence neighbourhood on a winter monring"
-                    class="blog__image"
-                  />
-                </div>
-                <div class="blog__text-container">
-                  <h3
-                    class="blog__blog-title paragraph paragraph-title paragraph-title--accent"
-                  >
-                    How I became a morning person
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    Your ultimate guide to join the early risers club.
-                  </p>
-                  <a
-                    href="https://medium.com/@chaoyue_zhao/how-i-became-a-morning-person-91537d616d14"
-                    target="__blank"
-                    class="blog__button button"
-                    >Read</a
-                  >
-                </div>
-              </div>
-              <div class="blog__item slideInUp slideInUp3 carousel-cell">
-                <div class="blog__image-container">
-                  <img
-                    src="assets/blogs/blog3.jpg"
-                    alt="Signs with my name (Chao Zhao) and the event title (visibility hidden) sitting on a table inside a dim room with blue and purple spot lights"
-                    class="blog__image"
-                  />
-                </div>
-                <div class="blog__text-container">
-                  <h3
-                    class="blog__blog-title paragraph paragraph-title paragraph-title--accent"
-                  >
-                    Things that shouldn’t stop you from learning to code
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    Because they didn’t stop me and I am a happy coder now.
-                  </p>
-                  <a
-                    href="https://hackeryou.com/blog/things-that-shouldnt-stop-you-from-learning-to-code"
-                    target="__blank"
-                    class="blog__button button"
-                    >Read</a
-                  >
-                </div>
-              </div>
-              <div class="blog__item carousel-cell">
-                <div class="blog__image-container">
-                  <img src="assets/blogs/blog4.jpg" alt="close up of codes on a text editor" class="blog__image" />
-                </div>
-                <div class="blog__text-container">
-                  <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
-                    My Post-Bootcamp “Netflix” Course List
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    Things/Topics I would like to learn after bootcamp.
-                  </p>
-                  <a href="https://medium.com/@chaoyue_zhao/my-post-bootcamp-netflix-list-272085301efb"
-                    target="__blank" class="blog__button button">Read</a>
-                </div>
-              </div>
-              <div class="blog__item carousel-cell">
-                <div class="blog__image-container">
-                  <img src="assets/blogs/blog5.jpg" alt="close up of codes on a text editor" class="blog__image" />
-                </div>
-                <div class="blog__text-container">
-                  <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
-                    Reduce( ): What, Why and How?
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    Helpful tips and examples for using the built-in function, reduce( ).
-                  </p>
-                  <a href="https://medium.com/@chaoyue_zhao/reduce-what-why-and-how-9d259f3708f0" target="__blank" class="blog__button button">Read</a>
-                </div>
-              </div>
-              <div class="blog__item carousel-cell">
-                <div class="blog__image-container">
-                  <img src="assets/blogs/blog6.jpg" alt="close up of codes on a text editor" class="blog__image" />
-                </div>
-                <div class="blog__text-container">
-                  <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
-                    Time-saving tips about Visual Studio Code.
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    Setting up for success, tips from one front end developers to another.
-                  </p>
-                  <a href="https://medium.com/@chaoyue_zhao/time-saving-tips-aboutvisual-studio-code-for-front-end-developers-9a0d259b80a9" target="__blank" class="blog__button button">Read</a>
-                </div>
-              </div>
-              <div class="blog__item carousel-cell">
-                <div class="blog__image-container">
-                  <img src="assets/blogs/blog7.jpg" alt="close up of codes on a text editor" class="blog__image" />
-                </div>
-                <div class="blog__text-container">
-                  <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
-                    The Wave: I attended #FITCToronto2019
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    What I learned from my first ever tech conference.
-                  </p>
-                  <a href="https://medium.com/@chaoyue_zhao/the-wave-i-attended-fitctoronto2019-841a71835898"
-                    target="__blank" class="blog__button button">Read</a>
-                </div>
-              </div>
-              <div class="blog__item carousel-cell">
-                <div class="blog__image-container">
-                  <img src="assets/blogs/blog8.jpg" alt="close up of codes on a text editor"
-                       class="blog__image" />
-                </div>
-                <div class="blog__text-container">
-                  <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
-                    Are we angry enough: I attended #a11yTO Camp
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    Making digital products accessible do not compromise them.
-                  </p>
-                  <a href="https://medium.com/@chaoyue_zhao/are-we-angry-enough-i-attended-a11yto-camp-2019-9eea33968988"
-                     target="__blank" class="blog__button button">Read</a>
-                </div>
-              </div>
-              <div class="blog__item carousel-cell">
-                <div class="blog__image-container">
-                  <img src="assets/blogs/blog9.jpg" alt="close up of codes on a text editor"
-                       class="blog__image" />
-                </div>
-                <div class="blog__text-container">
-                  <h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
-                    Dear Chao: The First 100 Days
-                  </h3>
-                  <p class="blog__paragraph paragraph paragraph--accent">
-                    A compassion letter to self on the 100th day of finishing coding bootcamp.
-                  </p>
-                  <a href="https://medium.com/@chaoyue_zhao/are-we-angry-enough-i-attended-a11yto-camp-2019-9eea33968988"
-                     target="__blank" class="blog__button button">Read</a>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-          <a href="#slide-4" class="links links__section links__section-bottom"
-            >Next</a
-          >
-        </div>
-      </section>
-      <section class="content-block" id="cb-2"></section>
-      <section class="contact fs slide" id="slide-4">
-        <div class="bcg">
-          <h2
-            class="contact__title heading heading-title heading-title--accent slideInUp slideInUp3"
-          >
-            Contact <span class="heading-title">Me</span>
-          </h2>
-          <div class="wrapper">
-              <form
-              action="https://formspree.io/chao@chaoyuezhao.com"
-              method="POST"
-              class="form contact__form">
-              <p class="form__paragraph paragraph slideInUp">
-                It all starts with saying hi. Fill the form below to contact me!
-              </p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="shortcut icon" href="assets/logo-black.png" type="image/x-icon" />
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,500i|Vidaloka" rel="stylesheet" />
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Chaoyue Zhao // Front-End Developer // Toronto</title>
+	</head>
+	<body class="is-loading">
+		<noscript>You need to enable JavaScript to see the full beauty of this website.</noscript>
+		<div id="preloader">
+			<div class="txt">
+				<p class="txt-perc">0%</p>
+				<div class="progress"><span></span></div>
+			</div>
+		</div>
+		<header class="header fs" id="intro">
+			<div class="bcg">
+				<div class="wrapper">
+					<div class="nav__overlay">&nbsp;</div>
+					<button for="navigation" class="nav__button" aria-label="click for menu" tabindex="0"></button>
+					<nav class="nav__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#slide-1" class="nav__link links"> About </a>
+							</li>
+							<li class="nav__item">
+								<a href="#slide-2" class="nav__link links"> Portfolio </a>
+							</li>
+							<li class="nav__item">
+								<a href="#slide-3" class="nav__link links"> Blog </a>
+							</li>
+							<li class="nav__item">
+								<a href="#slide-4" class="nav__link links"> Contact </a>
+							</li>
+						</ul>
+					</nav>
+					<img src="assets/logo-white.png" alt="logo" class="header__logo" />
+					<div class="header__text-container">
+						<h1 class="header__title heading heading-primary">
+							<span class="greeting"></span><span class="width">I'm Chao</span>
+						</h1>
+						<h2 class="header__tagline heading heading-tertiary">
+							Front-End Developer
+							<span class="width">living in Toronto, Canada</span>
+						</h2>
+					</div>
+					<a href="#slide-1" class="scroll-hint"
+						>Scroll
+						<span class="scroll-hint__icon"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="about fs slide" id="slide-1">
+				<div class="bcg">
+					<a href="#intro" class="links links__section links__section-top">Prev</a>
+					<h2 class="about__title heading heading-title slideInUp slideInUp4">About</h2>
+					<div class="wrapper">
+						<div class="about__content">
+							<div class="about__text-container">
+								<h3 class="about__tagline heading heading-secondary slideInUp">I'm Chao</h3>
+								<p class="about__subtagline paragraph paragraph-title slideInUp slideInUp2">
+									I believe computers are created to create.
+								</p>
+								<p class="about__paragraph paragraph slideInUp slideInUp3">
+									Hey, I’m Chao (pronunciation ‘ciao’), a front end developer whose work is fuelled by creativity,
+									curiosity and dedication. I got into this industry because I was in awe of all the things technologies
+									can bring. I wanted to learn the power to create, optimize and develop. I would like to stand out the
+									crowd as a forever learning and innovator: the best thing is yet to come.
+								</p>
+								<a href="assets/ChaoyueZhaoResume.pdf" class="button about__resume" target="_blank">Resume</a>
+							</div>
+							<div class="about__image-container image slideInUp slideInUp2">
+								<img
+									src="assets/chao.jpg"
+									alt="headshot of Chao sitting in a grey armchair wearing a jean top photo credit Pam Lau"
+									title="photo credit Pam Lau"
+									class="about__image"
+								/>
+							</div>
+						</div>
+					</div>
+					<a href="#slide-2" class="links links__section links__section-bottom">Next</a>
+				</div>
+			</section>
+			<section class="content-block" id="cb-1"></section>
+			<section class="portfolio fs slide" id="slide-2">
+				<div class="bcg">
+					<a href="#slide-1" class="links links__section links__section-top">Prev</a>
+					<h2 class="portfolio__title heading heading-title slideInUp slideInUp5">Portfolio</h2>
+					<div class="wrapper main-carousel">
+						<div class="portfolio__content carousel-cell">
+							<div class="portfolio__image-container slideInUp slideInUp3">
+								<img
+									src="assets/projects/mondrian.png"
+									alt="screenshot of the Mondrian app"
+									class="portfolio__image image"
+								/>
+							</div>
+							<div class="portfolio__text-container slideInUp slideInUp2">
+								<h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">
+									Mondrian in Style
+								</h3>
+								<div class="portfolio__description paragraph paragraph--accent">
+									A mighty jQuery app to generate your own Mondrian. Thanks to randomization and responsive browser
+									styling, the possibilities are endless!
+									<div class="portfolio__icon-container">
+										<i class="portfolio__icon dev-icon devicon-html5-plain" title="HTML5" aria-label="HTML5"></i>
+										<i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
+										<i
+											class="portfolio__icon dev-icon devicon-javascript-plain"
+											title="Javascript"
+											aria-label="Javascript"
+										></i>
+										<i class="portfolio__icon dev-icon devicon-jquery-plain" title="jQuery" aria-label="jQuery"></i>
+										<img
+											src="assets/dev/accessibility.svg"
+											title="web accessibility"
+											alt="web accessibility"
+											class="portfolio__icon dev-svg"
+										/>
+										<img
+											src="assets/dev/responsive.svg"
+											title="responsive design"
+											alt="responsive design"
+											class="portfolio__icon dev-svg"
+										/>
+										<i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
+										<i
+											class="portfolio__icon dev-icon devicon-visualstudio-plain"
+											title="Visual Studio"
+											aria-label="Visual Studio"
+										></i>
+									</div>
+									<div class="portfolio__button-container">
+										<a href="https://chaoyue-zhao.github.io/mondrian-in-style/" class="button portfolio__button"
+											>Visit</a
+										>
+										<a href="https://github.com/chaoyue-zhao/mondrian-in-style" class="button portfolio__button"
+											>Code</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__content carousel-cell">
+							<div class="portfolio__image-container">
+								<img
+									src="assets/projects/treats.png"
+									alt="screenshot of the Queen Street Hot Treat header"
+									class="portfolio__image image"
+								/>
+							</div>
+							<div class="portfolio__text-container">
+								<h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">
+									Queen Street Hot Treat
+								</h3>
+								<div class="portfolio__description paragraph paragraph--accent">
+									A jQuery app using Yelp Fusion API to give you the best meal options when you are at HackerYou!
+								</div>
+								<div class="portfolio__icon-container">
+									<i class="portfolio__icon dev-icon devicon-html5-plain" title="HTML5" aria-label="HTML5"></i>
+									<i class="portfolio__icon dev-icon devicon-sass-original" title="SASS" aria-label="SASS"></i>
+									<i class="portfolio__icon dev-icon devicon-jquery-plain" title="jQuery" aria-label="jQuery"></i>
+									<img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg" />
+									<img
+										src="assets/dev/accessibility.svg"
+										title="web accessibility"
+										alt="web accessibility"
+										class="portfolio__icon dev-svg"
+									/>
+									<img
+										src="assets/dev/responsive.svg"
+										title="responsive design"
+										alt="responsive design"
+										class="portfolio__icon dev-svg"
+									/>
+									<i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
+									<i
+										class="portfolio__icon dev-icon devicon-visualstudio-plain"
+										title="Visual Studio"
+										aria-label="Visual Studio"
+									></i>
+								</div>
+								<div class="portfolio__button-container">
+									<a href="https://chaoyue-zhao.github.io/queen-street-hot-treat/" class="button portfolio__button"
+										>Visit</a
+									>
+									<a href="https://github.com/chaoyue-zhao/queen-street-hot-treat" class="button portfolio__button"
+										>Code</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__content carousel-cell">
+							<div class="portfolio__image-container">
+								<img
+									src="assets/projects/thoughts.png"
+									alt="screenshot of the what'cha think'n app"
+									class="portfolio__image image"
+								/>
+							</div>
+							<div class="portfolio__text-container slideInUp sideInUp4">
+								<h3 class="portfolio__project-title heading heading-secondary heading-secondary--accent">
+									What'cha Think'n
+								</h3>
+								<div class="portfolio__description paragraph paragraph--accent">
+									A React app to analyze the sentiment behind your thoughts. There may or may not a public thought board
+									that you can see all the logged thoughts!
+								</div>
+								<div class="portfolio__icon-container">
+									<i class="portfolio__icon dev-icon devicon-react-original" title="React" aria-label="React"></i>
+									<img
+										src="assets/dev/styled-components.png"
+										title="styled-components"
+										alt="styled-components"
+										class="portfolio__icon dev-svg"
+									/>
+									<img src="assets/dev/firebase.svg" title="firebase" alt="Firebasse" class="portfolio__icon dev-svg" />
+									<img src="assets/dev/api.svg" title="API" alt="API" class="portfolio__icon dev-svg" />
+									<img
+										src="assets/dev/accessibility.svg"
+										title="web accessibility"
+										alt="web accessibility"
+										class="portfolio__icon dev-svg"
+									/>
+									<img
+										src="assets/dev/responsive.svg"
+										title="responsive design"
+										alt="responsive design"
+										class="portfolio__icon dev-svg"
+									/>
+									<i class="portfolio__icon dev-icon devicon-github-plain" title="Github" aria-label="Github"></i>
+									<i
+										class="portfolio__icon dev-icon devicon-visualstudio-plain"
+										title="Visual Studio"
+										aria-label="Visual Studio"
+									></i>
+								</div>
+								<div class="portfolio__button-container">
+									<a href="https://what-cha-think-n.firebaseapp.com/" class="button portfolio__button">Visit</a>
+									<a href="https://github.com/chaoyue-zhao/whatcha-thinkin" class="button portfolio__button">Code</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#slide-3" class="links links__section links__section-bottom">Next</a>
+				</div>
+			</section>
+			<section class="content-block" id="cb-2"></section>
+			<section class="blog fs slide" id="slide-3">
+				<div class="bcg">
+					<a href="#slide-2" class="links links__section links__section-top links__section-portfolio">Prev</a>
+					<div class="wrapper">
+						<h2 class="blog__title heading heading-title slideInUp slideInUp4">Blog</h2>
+						<div class="blog__content main-carousel">
+							<div class="blog__item slideInUp carousel-cell">
+								<div class="blog__image-container">
+									<img src="assets/blogs/blog1.jpg" alt="fruit sandwich on a blue ceramic plate" class="blog__image" />
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										Making Axios API Calls to Yelp Fusion inside React.js
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										Steps to import data with Yelp Fusion API into your React app.
+									</p>
+									<a
+										href="https://medium.com/@chaoyue_zhao/how-to-make-axios-api-calls-with-yelp-fusion-inside-react-js-10755d8485c5"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+							<div class="blog__item slideInUp slideInUp2 carousel-cell">
+								<div class="blog__image-container">
+									<img
+										src="assets/blogs/blog2.jpeg"
+										alt="street view of a residence neighbourhood on a winter monring"
+										class="blog__image"
+									/>
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										How I became a morning person
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										Your ultimate guide to join the early risers club.
+									</p>
+									<a
+										href="https://medium.com/@chaoyue_zhao/how-i-became-a-morning-person-91537d616d14"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+							<div class="blog__item slideInUp slideInUp3 carousel-cell">
+								<div class="blog__image-container">
+									<img
+										src="assets/blogs/blog3.jpg"
+										alt="Signs with my name (Chao Zhao) and the event title (visibility hidden) sitting on a table inside a dim room with blue and purple spot lights"
+										class="blog__image"
+									/>
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										Things that shouldn’t stop you from learning to code
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										Because they didn’t stop me and I am a happy coder now.
+									</p>
+									<a
+										href="https://hackeryou.com/blog/things-that-shouldnt-stop-you-from-learning-to-code"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+							<div class="blog__item carousel-cell">
+								<div class="blog__image-container">
+									<img src="assets/blogs/blog5.jpg" alt="close up of codes on a text editor" class="blog__image" />
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										Reduce( ): What, Why and How?
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										Helpful tips and examples for using the built-in function, reduce( ).
+									</p>
+									<a
+										href="https://medium.com/@chaoyue_zhao/reduce-what-why-and-how-9d259f3708f0"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+							<div class="blog__item carousel-cell">
+								<div class="blog__image-container">
+									<img src="assets/blogs/blog7.jpg" alt="close up of codes on a text editor" class="blog__image" />
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										The Wave: I attended #FITCToronto2019
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										What I learned from my first ever tech conference.
+									</p>
+									<a
+										href="https://medium.com/@chaoyue_zhao/the-wave-i-attended-fitctoronto2019-841a71835898"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+							<div class="blog__item carousel-cell">
+								<div class="blog__image-container">
+									<img src="assets/blogs/blog8.jpg" alt="close up of codes on a text editor" class="blog__image" />
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										Are we angry enough: I attended #a11yTO Camp
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										Making digital products accessible do not compromise them.
+									</p>
+									<a
+										href="https://medium.com/@chaoyue_zhao/are-we-angry-enough-i-attended-a11yto-camp-2019-9eea33968988"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+							<div class="blog__item carousel-cell">
+								<div class="blog__image-container">
+									<img src="assets/blogs/blog9.jpg" alt="close up of codes on a text editor" class="blog__image" />
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										Dear Chao: The First 100 Days
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										A compassion letter to self on the 100th day of finishing coding bootcamp.
+									</p>
+									<a
+										href="https://medium.com/@chaoyue_zhao/are-we-angry-enough-i-attended-a11yto-camp-2019-9eea33968988"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+							<div class="blog__item slideInUp carousel-cell">
+								<div class="blog__image-container">
+									<img
+										src="assets/blogs/blog10.jpeg"
+										alt="chao holding a box of poutine in front an installation"
+										class="blog__image"
+									/>
+								</div>
+								<div class="blog__text-container">
+									<h3 class="blog__blog-title paragraph paragraph-title paragraph-title--accent">
+										20 “things” I Loved in 2020
+									</h3>
+									<p class="blog__paragraph paragraph paragraph--accent">
+										Twenty things I am grateful for in the most unusual year ever.
+									</p>
+									<a
+										href="https://chaoyue-zhao.medium.com/20-things-i-loved-in-2020-fddb09509304"
+										target="__blank"
+										class="blog__button button"
+										>Read</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#slide-4" class="links links__section links__section-bottom">Next</a>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<section class="footer__social-media">
+					<a href="https://twitter.com/ChaoyueZ" class="links footer__links">
+						<i class="footer__icon fab fa-twitter"></i>
+					</a>
+					<a href="https://medium.com/@chaoyue_zhao" class="links footer__links">
+						<i class="footer__icon fab fa-medium-m"></i>
+					</a>
+					<a href="http://www.linkedin.com/in/chaoyuezhao" class="links footer__links">
+						<i class="footer__icon fab fa-linkedin-in"></i>
+					</a>
+					<a href="https://www.instagram.com/chaoyue_zhao/" class="links footer__links">
+						<i class="footer__icon fab fa-instagram"></i>
+					</a>
+				</section>
+				<p class="footer__paragraph paragraph">
+					Built with <i class="fas fa-coffee"></i> and <i class="fas fa-heart"></i> in the beautiful city of Toronto
+					<img src="assets/toronto.png" class="footer__toronto" />, Canada.
+				</p>
+				<p class="footer__paragraph paragraph">Copyright © 2021 Chaoyue Zhao.</p>
+			</div>
+		</footer>
 
-              <div class="form__input-container slideInUp slideInup2">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Name*"
-                  class="form__input"
-                  required
-                />
-                <label for="name" class="form__label">Name*</label>
-              </div>
-
-              <div class="form__input-container slideInUp slideInUp2">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email address*"
-                  class="form__input"
-                  required
-                />
-                <label for="email" class="form__label">Email address*</label>
-              </div>
-
-              <div class="form__input-container slideInUp slideInup2">
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="10"
-                  rows="8"
-                  placeholder="Your message*"
-                  class="form__input"
-                  resize="none"
-                  required
-                ></textarea>
-                <label for="message" class="form__label">Your message*</label>
-              </div>
-
-              <button
-                type="submit"
-                class="form__button button slideInUp slideInUp3"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="wrapper">
-        <section class="footer__social-media">
-          <a href="https://twitter.com/ChaoyueZ" class="links footer__links">
-            <i class="footer__icon fab fa-twitter"></i>
-          </a>
-          <a href="https://medium.com/@chaoyue_zhao" class="links footer__links">
-            <i class="footer__icon fab fa-medium-m"></i>
-          </a>
-          <a href="http://www.linkedin.com/in/chaoyuezhao" class="links footer__links">
-            <i class="footer__icon fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com/chaoyue_zhao/" class="links footer__links">
-            <i class="footer__icon fab fa-instagram"></i>
-          </a>
-          <a href="mailto:chao@chaoyuezhao.com" class="links footer__links">
-            <i class="footer__icon fas fa-at"></i>
-          </a>
-        </section>
-        <p class="footer__paragraph paragraph">
-          Built with <i class="fas fa-coffee"></i> and
-          <i class="fas fa-heart"></i> in the beautiful city of Toronto
-          <img src="assets/toronto.png" class="footer__toronto" />, Canada.
-        </p>
-        <p class="footer__paragraph paragraph">
-          Copyright © 2019 Chaoyue Zhao.
-        </p>
-      </div>
-    </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
-    <script src="script/script.js"></script>
-  </body>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+		<script src="script/script.js"></script>
+	</body>
 </html>
